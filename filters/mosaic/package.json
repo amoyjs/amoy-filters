@@ -1,0 +1,29 @@
+{
+  "name": "@amoy/filter-mosaic",
+  "version": "1.0.0",
+  "main": "lib/filter-mosaic.cjs.js",
+  "bundle": "dist/filter-mosaic.js",
+  "description": "PixiJS filter to apply an mosaic effect",
+  "author": "finscn <finscn@gmail.com>",
+  "module": "lib/filter-mosaic.esm.js",
+  "types": "types.d.ts",
+  "homepage": "http://pixijs.com/",
+  "bugs": "https://github.com/pixijs/pixi-filters/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixijs/pixi-filters.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "types.d.ts"
+  ],
+  "dependencies": {
+    "@amoy/filter-page-curl": "^1.0.0",
+    "@pixi/core": "^5.0.0-X"
+  }
+}

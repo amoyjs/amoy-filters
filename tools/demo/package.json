@@ -1,0 +1,29 @@
+{
+  "name": "@tools/demo",
+  "private": true,
+  "version": "3.0.3",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf index.js.map index.js",
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "build:dev": "rollup -cm",
+    "watch": "rollup -cwm"
+  },
+  "devDependencies": {
+    "amoy-filters": "^1.0.0",
+    "cross-env": "^5.2.0",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.11.3",
+    "rollup-plugin-buble": "^0.19.6",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "rollup-watch": "^4.3.1"
+  },
+  "dependencies": {
+    "@amoy/filter-page-curl": "^1.0.0",
+    "pixi.js": "^5.0.0-X"
+  }
+}

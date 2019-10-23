@@ -1,2 +1,2 @@
 # amoy-filters
-ext pixi filters repo. 
+ext pixi filters repo

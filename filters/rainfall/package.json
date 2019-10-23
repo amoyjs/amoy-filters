@@ -1,0 +1,29 @@
+{
+  "name": "@amoy/filter-rainfall",
+  "version": "1.0.0",
+  "main": "lib/filter-rainfall.cjs.js",
+  "bundle": "dist/filter-rainfall.js",
+  "description": "PixiJS filter to apply an test effect",
+  "author": "lilieming <lilieminglook@gmail.com>",
+  "module": "lib/filter-rainfall.esm.js",
+  "types": "types.d.ts",
+  "homepage": "https://github.com/lilieming/warmrabit-pixi-filters/",
+  "bugs": "https://github.com/lilieming/warmrabit-pixi-filters/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lilieming/warmrabit-pixi-filters.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "types.d.ts"
+  ],
+  "dependencies": {
+    "@amoy/filter-page-curl": "^1.0.0",
+    "@pixi/core": "^5.0.0-X"
+  }
+}

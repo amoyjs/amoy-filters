@@ -1,0 +1,9 @@
+0 silly argv { _: [ 'create' ],
+0 silly argv   lernaVersion: '3.16.4',
+0 silly argv   '$0': 'lerna',
+0 silly argv   name: './filters/pixel-vibration' }
+1 notice cli v3.16.4
+2 verbose rootPath /Users/lilieming/Documents/lerna-repo
+3 error TypeError: Expected the input to be `string | string[]`
+3 error     at camelCase (/Users/lilieming/Documents/lerna-repo/node_modules/@lerna/create/node_modules/camelcase/index.js:34:9)
+3 error     at CreateCommand.initialize (/Users/lilieming/Documents/lerna-repo/node_modules/@lerna/create/index.js:63:22)

@@ -1,0 +1,29 @@
+{
+  "name": "@amoy/filter-white-black-sketch",
+  "version": "1.0.0",
+  "main": "lib/filter-white-black-sketch.cjs.js",
+  "bundle": "dist/filter-white-black-sketch.js",
+  "description": "PixiJS filter to apply an white-black-sketch effect",
+  "author": "lilieming <lilieminglook@gmail.com>",
+  "module": "lib/filter-white-black-sketch.esm.js",
+  "types": "types.d.ts",
+  "homepage": "https://github.com/lilieming/warmrabit-pixi-filters/",
+  "bugs": "https://github.com/lilieming/warmrabit-pixi-filters/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lilieming/warmrabit-pixi-filters.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "types.d.ts"
+  ],
+  "dependencies": {
+    "@amoy/filter-page-curl": "^1.0.0",
+    "@pixi/core": "^5.0.0-X"
+  }
+}

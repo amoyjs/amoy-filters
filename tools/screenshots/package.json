@@ -1,0 +1,19 @@
+{
+  "name": "@tools/screenshots",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "electron main.js"
+  },
+  "devDependencies": {
+    "amoy-filters": "^1.0.0",
+    "base64-to-image": "^1.0.2",
+    "electron": "^4.0.1",
+    "fs-extra": "^7.0.1",
+    "gifencoder": "^2.0.1",
+    "pixi.js": "^5.0.0-X"
+  },
+  "dependencies": {
+    "@amoy/filter-page-curl": "^1.0.0"
+  }
+}

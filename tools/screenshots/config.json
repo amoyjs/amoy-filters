@@ -1,0 +1,73 @@
+{
+    "animations": [
+        {
+            "filename": "AmoyRainfallFilter",
+            "delay": 200,
+            "frames": [
+                "rainfall-0",
+                "rainfall-1",
+                "rainfall-2",
+                "rainfall-3",
+                "rainfall-4",
+                "rainfall-5"
+            ]
+        }
+    ],
+    "images" : [
+        {
+            "name": "AmoyMosaicFilter",
+            "filename": "mosaic",
+            "options": {
+                "tileSize": 32.0
+            }
+        },
+        {
+            "name": "AmoyRainfallFilter",
+            "frame": "rainfall-0",
+            "options": {
+                "rainR": 10.0,
+                "delta": 0.0
+            }
+        },
+        {
+            "name": "AmoyRainfallFilter",
+            "frame": "rainfall-1",
+            "options": {
+                "rainR": 10.0,
+                "delta": 0.01
+            }
+        },
+        {
+            "name": "AmoyRainfallFilter",
+            "frame": "rainfall-2",
+            "options": {
+                "rainR": 10.0,
+                "delta": 0.04
+            }
+        },
+        {
+            "name": "AmoyRainfallFilter",
+            "frame": "rainfall-3",
+            "options": {
+                "rainR": 10.0,
+                "delta": 0.08
+            }
+        },
+        {
+            "name": "AmoyRainfallFilter",
+            "frame": "rainfall-4",
+            "options": {
+                "rainR": 10.0,
+                "delta": 0.1
+            }
+        },
+        {
+            "name": "AmoyRainfallFilter",
+            "frame": "rainfall-5",
+            "options": {
+                "rainR": 10.0,
+                "delta": 0.14
+            }
+        }
+    ]
+}

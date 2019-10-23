@@ -1,0 +1,8 @@
+{
+  "packages": [
+    "bundle",
+    "filters/*",
+    "tools/*"
+  ],
+  "version": "1.0.0"
+}

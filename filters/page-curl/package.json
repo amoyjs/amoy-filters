@@ -1,0 +1,28 @@
+{
+  "name": "@amoy/filter-page-curl",
+  "version": "1.0.0",
+  "main": "lib/filter-page-curl.cjs.js",
+  "bundle": "dist/filter-page-curl.js",
+  "description": "PixiJS filter to apply an page-curl effect",
+  "author": "lilieming <lilieminglook@gmail.com>",
+  "module": "lib/filter-page-curl.esm.js",
+  "types": "types.d.ts",
+  "homepage": "https://github.com/lilieming/warmrabit-pixi-filters/",
+  "bugs": "https://github.com/lilieming/warmrabit-pixi-filters/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lilieming/warmrabit-pixi-filters.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "types.d.ts"
+  ],
+  "dependencies": {
+    "@pixi/core": "^5.0.0-X"
+  }
+}
