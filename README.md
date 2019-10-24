@@ -38,3 +38,4 @@ Build all filters in dev-mode (un-minified):
 
 ```bash
 npm run build:dev
+```
