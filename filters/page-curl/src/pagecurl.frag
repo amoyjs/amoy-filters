@@ -74,7 +74,6 @@ void main(void)
 		if(p.x<=aspect&&p.y<=1.&&p.x>0.&&p.y>0.&&length(mouseDir)>0.){
 			uv = p ;
 			// 背面页平面区域
-			// fragColor=vec4(1);
 			uv = (1.0 - uv*vec2(1./aspect,1.));
 			uv.y = 1.0 - uv.y;
 			fragColor=texture(nextPageTexture,uv);

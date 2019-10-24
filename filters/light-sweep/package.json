@@ -7,8 +7,8 @@
   "author": "lilieming <lilieminglook@gmail.com>",
   "module": "lib/filter-light-sweep.esm.js",
   "types": "types.d.ts",
-  "homepage": "https://github.com/lilieming/warmrabit-pixi-filters/",
-  "bugs": "https://github.com/lilieming/warmrabit-pixi-filters/issues",
+  "homepage": "https://github.com/amoyjs/amoy-filters/",
+  "bugs": "https://github.com/amoyjs/amoy-filters/issues",
   "license": "MIT",
   "repository": {
     "type": "git",
