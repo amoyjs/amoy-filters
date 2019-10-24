@@ -11,7 +11,7 @@ uniform float uStartPosx;
 uniform float uStartPosy;
 
 #define pi 3.14159265359
-#define radius .1
+#define radius .08
 
 #define iResolution filterArea
 #define iTime uTime
@@ -45,8 +45,9 @@ void main(void)
 	if(dist>radius)
 	{
 		//下一页面
-		fragColor=texture(nextPageTexture,uv*vec2(1./aspect,1.));
-		fragColor.rgb*=pow(clamp(dist-radius,0.,1.)*1.5,.2);
+		// fragColor=texture(nextPageTexture,uv*vec2(1./aspect,1.));
+		// fragColor.rgb*=pow(clamp(dist-radius,0.,1.)*1.5,.2);
+		discard;
 	}
 	else if(dist>=0.)
 	{
@@ -57,9 +58,11 @@ void main(void)
 		if(p2.x<=aspect&&p2.y<=1.&&p2.x>0.&&p2.y>0.){
 			uv = p2;
 			//背面页 圆柱面
-			fragColor = texture(nextPageTexture, uv * vec2(1. / aspect, 1.));
-			fragColor.rgb*=pow(clamp((radius-dist)/radius,0.,1.),1.);
-			fragColor.a = 0.1;
+			uv = (1.0 - uv*vec2(1./aspect,1.));
+			uv.y = 1.0 - uv.y;
+			fragColor = texture(nextPageTexture, uv);
+			fragColor.rgb*=pow(clamp((radius-dist)/radius,0.,1.), .5);
+			fragColor.a = 1.;
 		}else{
 			uv = p1;
 			fragColor = texture(uSampler, uv * vec2(1. / aspect, 1.));
@@ -71,10 +74,12 @@ void main(void)
 		vec2 p=linePoint+mouseDir*(abs(dist)+pi*radius);
 		if(p.x<=aspect&&p.y<=1.&&p.x>0.&&p.y>0.&&length(mouseDir)>0.){
 			uv = p ;
-			//背面页平面区域
+			// 背面页平面区域
 			// fragColor=vec4(1);
-			fragColor=texture(nextPageTexture,uv*vec2(1./aspect,1.));
-			fragColor.a = 0.1;
+			uv = (1.0 - uv*vec2(1./aspect,1.));
+			uv.y = 1.0 - uv.y;
+			fragColor=texture(nextPageTexture,uv);
+			fragColor.a = 1.;
 		}else{
 			// 正面页面
 			fragColor=texture(uSampler,uv*vec2(1./aspect,1.));

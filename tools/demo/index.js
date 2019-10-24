@@ -3,7 +3,7 @@
 
   /*!
    * @amoy/filter-rainfall - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * @amoy/filter-rainfall is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -81,7 +81,7 @@
 
   /*!
    * @amoy/filter-mosaic - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * @amoy/filter-mosaic is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -148,7 +148,7 @@
 
   /*!
    * @amoy/filter-pixel-vibration - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * @amoy/filter-pixel-vibration is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -241,7 +241,7 @@
 
   /*!
    * @amoy/filter-light2d - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * @amoy/filter-light2d is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -314,7 +314,7 @@
 
   /*!
    * @amoy/filter-lens-halo - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * @amoy/filter-lens-halo is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -403,7 +403,7 @@
 
   /*!
    * @amoy/filter-broken-cam-distortion - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * @amoy/filter-broken-cam-distortion is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -463,7 +463,7 @@
 
   /*!
    * @amoy/filter-page-curl - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * @amoy/filter-page-curl is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -471,7 +471,7 @@
 
   var vertex$5 = "attribute vec2 aVertexPosition;\nattribute vec2 aTextureCoord;\n\nuniform mat3 projectionMatrix;\n\nvarying vec2 vTextureCoord;\n\nvoid main(void)\n{\n    gl_Position = vec4((projectionMatrix * vec3(aVertexPosition, 1.0)).xy, 0.0, 1.0);\n    vTextureCoord = aTextureCoord;\n}";
 
-  var fragment$5 = "varying vec2 vTextureCoord;//passed from vect shader \n\nuniform sampler2D uSampler;// 2d texture\nuniform sampler2D nextPageTexture;// 2d texture\n\nuniform vec4 filterArea;\n\nuniform float uPosx;\nuniform float uPosy;\nuniform float uStartPosx;\nuniform float uStartPosy;\n\n#define pi 3.14159265359\n#define radius .1\n\n#define iResolution filterArea\n#define iTime uTime\n#define fragColor gl_FragColor\n#define texture texture2D\n\nvoid main(void)\n{\n\tfloat aspect=iResolution.x/iResolution.y;\n\t\n\tvec2 uv=vTextureCoord*filterArea.xy*vec2(aspect,1.)/iResolution.xy;\n\t\n\tvec4 virtualMouse=vec4(uPosx,uPosy,uStartPosx,uStartPosy);\n\t\n\tvec2 mouse=virtualMouse.xy*vec2(aspect,1.)/iResolution.xy;\n\tvec2 mouseDir=normalize(abs(virtualMouse.zw)-virtualMouse.xy);\n\tvec2 origin=clamp(mouse-mouseDir*mouse.x/mouseDir.x,0.,1.);\n\t\n\tfloat mouseDist=clamp(length(mouse-origin)+(aspect-(abs(virtualMouse.z)/iResolution.x)*aspect)/mouseDir.x,0.,aspect/mouseDir.x);\n\t\n\tif(mouseDir.x<0.)\n\t{\n\t\tmouseDist=distance(mouse,origin);\n\t}\n\t\n\tfloat proj=dot(uv-origin,mouseDir);\n\tfloat dist=proj-mouseDist;\n\t\n\tvec2 linePoint=uv-dist*mouseDir;\n\t\n\tif(dist>radius)\n\t{\n\t\t//下一页面\n\t\tfragColor=texture(nextPageTexture,uv*vec2(1./aspect,1.));\n\t\tfragColor.rgb*=pow(clamp(dist-radius,0.,1.)*1.5,.2);\n\t}\n\telse if(dist>=0.)\n\t{\n\t\t// 圆柱面点映射\n\t\tfloat theta=asin(dist/radius);\n\t\tvec2 p2=linePoint+mouseDir*(pi-theta)*radius;\n\t\tvec2 p1=linePoint+mouseDir*theta*radius;\n\t\tif(p2.x<=aspect&&p2.y<=1.&&p2.x>0.&&p2.y>0.){\n\t\t\tuv = p2;\n\t\t\t//背面页 圆柱面\n\t\t\tfragColor = texture(nextPageTexture, uv * vec2(1. / aspect, 1.));\n\t\t\tfragColor.rgb*=pow(clamp((radius-dist)/radius,0.,1.),1.);\n\t\t\tfragColor.a = 0.1;\n\t\t}else{\n\t\t\tuv = p1;\n\t\t\tfragColor = texture(uSampler, uv * vec2(1. / aspect, 1.));\n\t\t\tfragColor.rgb*=pow(clamp((radius-dist)/radius,0.,1.),1.);\n\t\t}\n\t}\n\telse\n\t{\n\t\tvec2 p=linePoint+mouseDir*(abs(dist)+pi*radius);\n\t\tif(p.x<=aspect&&p.y<=1.&&p.x>0.&&p.y>0.&&length(mouseDir)>0.){\n\t\t\tuv = p ;\n\t\t\t//背面页平面区域\n\t\t\t// fragColor=vec4(1);\n\t\t\tfragColor=texture(nextPageTexture,uv*vec2(1./aspect,1.));\n\t\t\tfragColor.a = 0.1;\n\t\t}else{\n\t\t\t// 正面页面\n\t\t\tfragColor=texture(uSampler,uv*vec2(1./aspect,1.));\n\t\t}\n\t\t\n\t}\n}";
+  var fragment$5 = "varying vec2 vTextureCoord;//passed from vect shader \n\nuniform sampler2D uSampler;// 2d texture\nuniform sampler2D nextPageTexture;// 2d texture\n\nuniform vec4 filterArea;\n\nuniform float uPosx;\nuniform float uPosy;\nuniform float uStartPosx;\nuniform float uStartPosy;\n\n#define pi 3.14159265359\n#define radius .08\n\n#define iResolution filterArea\n#define iTime uTime\n#define fragColor gl_FragColor\n#define texture texture2D\n\nvoid main(void)\n{\n\tfloat aspect=iResolution.x/iResolution.y;\n\t\n\tvec2 uv=vTextureCoord*filterArea.xy*vec2(aspect,1.)/iResolution.xy;\n\t\n\tvec4 virtualMouse=vec4(uPosx,uPosy,uStartPosx,uStartPosy);\n\t\n\tvec2 mouse=virtualMouse.xy*vec2(aspect,1.)/iResolution.xy;\n\tvec2 mouseDir=normalize(abs(virtualMouse.zw)-virtualMouse.xy);\n\tvec2 origin=clamp(mouse-mouseDir*mouse.x/mouseDir.x,0.,1.);\n\t\n\tfloat mouseDist=clamp(length(mouse-origin)+(aspect-(abs(virtualMouse.z)/iResolution.x)*aspect)/mouseDir.x,0.,aspect/mouseDir.x);\n\t\n\tif(mouseDir.x<0.)\n\t{\n\t\tmouseDist=distance(mouse,origin);\n\t}\n\t\n\tfloat proj=dot(uv-origin,mouseDir);\n\tfloat dist=proj-mouseDist;\n\t\n\tvec2 linePoint=uv-dist*mouseDir;\n\t\n\tif(dist>radius)\n\t{\n\t\t//下一页面\n\t\t// fragColor=texture(nextPageTexture,uv*vec2(1./aspect,1.));\n\t\t// fragColor.rgb*=pow(clamp(dist-radius,0.,1.)*1.5,.2);\n\t\tdiscard;\n\t}\n\telse if(dist>=0.)\n\t{\n\t\t// 圆柱面点映射\n\t\tfloat theta=asin(dist/radius);\n\t\tvec2 p2=linePoint+mouseDir*(pi-theta)*radius;\n\t\tvec2 p1=linePoint+mouseDir*theta*radius;\n\t\tif(p2.x<=aspect&&p2.y<=1.&&p2.x>0.&&p2.y>0.){\n\t\t\tuv = p2;\n\t\t\t//背面页 圆柱面\n\t\t\tuv = (1.0 - uv*vec2(1./aspect,1.));\n\t\t\tuv.y = 1.0 - uv.y;\n\t\t\tfragColor = texture(nextPageTexture, uv);\n\t\t\tfragColor.rgb*=pow(clamp((radius-dist)/radius,0.,1.), .5);\n\t\t\tfragColor.a = 1.;\n\t\t}else{\n\t\t\tuv = p1;\n\t\t\tfragColor = texture(uSampler, uv * vec2(1. / aspect, 1.));\n\t\t\tfragColor.rgb*=pow(clamp((radius-dist)/radius,0.,1.),1.);\n\t\t}\n\t}\n\telse\n\t{\n\t\tvec2 p=linePoint+mouseDir*(abs(dist)+pi*radius);\n\t\tif(p.x<=aspect&&p.y<=1.&&p.x>0.&&p.y>0.&&length(mouseDir)>0.){\n\t\t\tuv = p ;\n\t\t\t// 背面页平面区域\n\t\t\t// fragColor=vec4(1);\n\t\t\tuv = (1.0 - uv*vec2(1./aspect,1.));\n\t\t\tuv.y = 1.0 - uv.y;\n\t\t\tfragColor=texture(nextPageTexture,uv);\n\t\t\tfragColor.a = 1.;\n\t\t}else{\n\t\t\t// 正面页面\n\t\t\tfragColor=texture(uSampler,uv*vec2(1./aspect,1.));\n\t\t}\n\t\t\n\t}\n}";
 
   /**
    * @class
@@ -633,7 +633,7 @@
 
   /*!
    * @amoy/filter-sparks-drifting - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * @amoy/filter-sparks-drifting is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -736,7 +736,7 @@
 
   /*!
    * @amoy/filter-white-black-sketch - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * @amoy/filter-white-black-sketch is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -813,7 +813,7 @@
 
   /*!
    * @amoy/filter-vcr - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * @amoy/filter-vcr is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -874,7 +874,7 @@
 
   /*!
    * @amoy/filter-flame - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * @amoy/filter-flame is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -978,7 +978,7 @@
 
   /*!
    * @amoy/filter-gameboy-style - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * @amoy/filter-gameboy-style is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -1017,7 +1017,7 @@
 
   /*!
    * @amoy/filter-snow - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * @amoy/filter-snow is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -1094,7 +1094,7 @@
 
   /*!
    * @amoy/filter-light-sweep - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * @amoy/filter-light-sweep is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -1153,7 +1153,7 @@
 
   /*!
    * @amoy/filter-reflection - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * @amoy/filter-reflection is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -1242,7 +1242,7 @@
 
   /*!
    * @amoy/filter-water-reflection - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * @amoy/filter-water-reflection is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -1303,7 +1303,7 @@
 
   /*!
    * @amoy/filter-weather-rainy - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * @amoy/filter-weather-rainy is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -1364,7 +1364,7 @@
 
   /*!
    * @amoy/filter-weather-cloud - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * @amoy/filter-weather-cloud is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -1425,7 +1425,7 @@
 
   /*!
    * amoy-filters - v1.0.0
-   * Compiled Tue, 22 Oct 2019 07:53:08 UTC
+   * Compiled Wed, 23 Oct 2019 10:05:18 UTC
    *
    * amoy-filters is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
