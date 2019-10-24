@@ -12,8 +12,5 @@
     "fs-extra": "^7.0.1",
     "gifencoder": "^2.0.1",
     "pixi.js": "^5.0.0-X"
-  },
-  "dependencies": {
-    "@amoy/filter-page-curl": "^1.0.0"
   }
 }
