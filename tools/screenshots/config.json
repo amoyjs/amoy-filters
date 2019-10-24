@@ -11,6 +11,18 @@
                 "rainfall-4",
                 "rainfall-5"
             ]
+        },
+        {
+            "filename": "AmoyFlameFilter",
+            "delay": 200,
+            "frames": [
+                "flame-0",
+                "flame-1",
+                "flame-2",
+                "flame-3",
+                "flame-4",
+                "flame-5"
+            ]
         }
     ],
     "images" : [
@@ -19,6 +31,73 @@
             "filename": "mosaic",
             "options": {
                 "tileSize": 32.0
+            }
+        },
+        {
+            "name": "AmoyWhiteBlackSketchFilter",
+            "filename": "white-black-sketch",
+            "options":{
+                "delta": 0.3
+            }
+        },
+        {
+            "name": "AmoyPixelVibrationFilter",
+            "filename": "pixel-vibration",
+            "options":{
+                "delta": 0.3
+            }
+        },
+        {
+            "name": "AmoyFlameFilter",
+            "filename": "flame-0",
+            "options":{
+                "posx": 100,
+                "posy": 100,
+                "delta": 0.3
+            }
+        },
+        {
+            "name": "AmoyFlameFilter",
+            "filename": "flame-1",
+            "options":{
+                "posx": 100,
+                "posy": 100,
+                "delta": 0.06
+            }
+        },
+        {
+            "name": "AmoyFlameFilter",
+            "filename": "flame-2",
+            "options":{
+                "posx": 100,
+                "posy": 100,
+                "delta": 0.09
+            }
+        },
+        {
+            "name": "AmoyFlameFilter",
+            "filename": "flame-3",
+            "options":{
+                "posx": 100,
+                "posy": 100,
+                "delta": 0.12
+            }
+        },
+        {
+            "name": "AmoyFlameFilter",
+            "filename": "flame-4",
+            "options":{
+                "posx": 100,
+                "posy": 100,
+                "delta": 0.15
+            }
+        },
+        {
+            "name": "AmoyFlameFilter",
+            "filename": "flame-5",
+            "options":{
+                "posx": 100,
+                "posy": 100
             }
         },
         {
