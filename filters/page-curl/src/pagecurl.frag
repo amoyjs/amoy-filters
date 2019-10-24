@@ -45,9 +45,8 @@ void main(void)
 	if(dist>radius)
 	{
 		//下一页面
-		// fragColor=texture(nextPageTexture,uv*vec2(1./aspect,1.));
-		// fragColor.rgb*=pow(clamp(dist-radius,0.,1.)*1.5,.2);
-		discard;
+		fragColor=texture(nextPageTexture,uv*vec2(1./aspect,1.));
+		fragColor.rgb*=pow(clamp(dist-radius,0.,1.)*1.5,.2);
 	}
 	else if(dist>=0.)
 	{
