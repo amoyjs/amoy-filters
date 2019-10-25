@@ -4,6 +4,9 @@ Amoy-filters 是基于pixijs，对pixi-filter的扩充。提供更丰富的滤�
 ## Demo
 Click [here](https://amoyjs.github.io/amoy-filters/tools/demo/index.html) to interactively play with filters to see how they work.
 
+## doc api
+Click [here](https://amoyjs.github.io/amoy-filters/docs/index.html) to see how to use it.
+
 ## Filters
 
 All filters work with PixiJS v5.

@@ -4,9 +4,13 @@ import {Filter} from '@pixi/core';
 import { timingSafeEqual } from 'crypto';
 
 /**
+ * The CRTFilter applies a CRT effect to an object.<br>
+ * ![original](../tools/screenshots/dist/original.png)![filter](../tools/screenshots/dist/broken-cam-distortion.gif)
+ *
  * @class
  * @extends PIXI.Filter
  * @memberof AMOY.filters
+ *  @param {number} [delta=0] - For animating interlaced lines
  */
 
 class AmoyBrokenCamDistortionFilter extends Filter{
