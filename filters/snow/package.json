@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-snow",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "main": "lib/filter-snow.cjs.js",
   "bundle": "dist/filter-snow.js",
   "description": "PixiJS filter to apply an snow effect",

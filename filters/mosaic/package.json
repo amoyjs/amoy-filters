@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-mosaic",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "main": "lib/filter-mosaic.cjs.js",
   "bundle": "dist/filter-mosaic.js",
   "description": "PixiJS filter to apply an mosaic effect",

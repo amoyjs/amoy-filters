@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-water-reflection",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "main": "lib/filter-water-reflection.cjs.js",
   "bundle": "dist/filter-water-reflection.js",
   "description": "PixiJS filter to apply an water-reflection effect",
@@ -23,7 +23,7 @@
     "types.d.ts"
   ],
   "dependencies": {
-    "@amoy/filter-page-curl": "^3.0.0",
+    "@amoy/filter-page-curl": "^3.0.1",
     "@pixi/core": "^5.0.0-X"
   },
   "gitHead": "6bb437322b014dce8732ecacd3602ff48414e249"

@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-broken-cam-distortion",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "main": "lib/filter-broken-cam-distortion.cjs.js",
   "bundle": "dist/filter-broken-cam-distortion.js",
   "description": "PixiJS filter to apply an broken-cam-distortion effect",

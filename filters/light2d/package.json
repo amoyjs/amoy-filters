@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-light2d",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "main": "lib/filter-light2d.cjs.js",
   "bundle": "dist/filter-light2d.js",
   "description": "PixiJS filter to apply an light2d effect",
