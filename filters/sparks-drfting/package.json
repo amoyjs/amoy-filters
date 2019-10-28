@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-sparks-drifting",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "lib/filter-sparks-drifting.cjs.js",
   "bundle": "dist/filter-sparks-drifting.js",
   "description": "PixiJS filter to apply an lens-halo effect",

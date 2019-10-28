@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-pixel-vibration",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "lib/filter-pixel-vibration.cjs.js",
   "bundle": "dist/filter-pixel-vibration.js",
   "description": "PixiJS filter to apply an pixel-vibration effect",
