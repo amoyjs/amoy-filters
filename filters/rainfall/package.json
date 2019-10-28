@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-rainfall",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "main": "lib/filter-rainfall.cjs.js",
   "bundle": "dist/filter-rainfall.js",
   "description": "PixiJS filter to apply an test effect",

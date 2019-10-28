@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-flame",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "main": "lib/filter-flame.cjs.js",
   "bundle": "dist/filter-flame.js",
   "description": "PixiJS filter to apply an flame effect",

@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-lens-halo",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "main": "lib/filter-lens-halo.cjs.js",
   "bundle": "dist/filter-lens-halo.js",
   "description": "PixiJS filter to apply an lens-halo effect",
