@@ -25,5 +25,6 @@
   "dependencies": {
     "@amoy/filter-page-curl": "^2.0.0",
     "@pixi/core": "^5.0.0-X"
-  }
+  },
+  "gitHead": "cf11245143fa7aa2bd56ecf6ab929488c695bc85"
 }

@@ -41,5 +41,6 @@
     "@amoy/filter-weather-cloud": "^2.0.0",
     "@amoy/filter-weather-rainy": "^2.0.0",
     "@amoy/filter-white-black-sketch": "^2.0.0"
-  }
+  },
+  "gitHead": "cf11245143fa7aa2bd56ecf6ab929488c695bc85"
 }

@@ -24,5 +24,6 @@
   ],
   "dependencies": {
     "@pixi/core": "^5.0.0-X"
-  }
+  },
+  "gitHead": "cf11245143fa7aa2bd56ecf6ab929488c695bc85"
 }
