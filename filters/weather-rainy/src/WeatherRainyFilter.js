@@ -23,7 +23,7 @@ class AmoyWeatherRainyFilter extends Filter{
         this.uniforms.uTime = this.delta <= 0 ? 2.0 : this.delta;
         filterManager.applyFilter(this, input, output, clear);
     }
-    
+
     /**
      * time for animation
      *

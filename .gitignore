@@ -1,1 +1,10 @@
+.idea
+.vscode
 node_modules
+lib
+*.log
+docs
+dist
+tools/demo/index.js
+tools/demo/index.js.map
+.DS_Store

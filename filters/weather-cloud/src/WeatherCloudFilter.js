@@ -9,7 +9,7 @@ import {Filter} from '@pixi/core';
  */
 
 class AmoyWeatherCloudFilter extends Filter{
-    constructor(posx = 10.0, posy = 10.0, delta = 0.0) {
+    constructor(delta = 0.0) {
         super(vertex, fragment);
         // sub class
         this.delta = delta;

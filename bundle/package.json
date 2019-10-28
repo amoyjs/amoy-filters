@@ -1,8 +1,8 @@
 {
-  "name": "amoy-filters",
+  "name": "@amoy/filters",
   "version": "1.0.0",
   "main": "lib/amoy-filters.cjs.js",
-  "description": "PixiJS v5 optional display amoy-filters",
+  "description": "PixiJS v5 optional display filters",
   "author": "lilieming <lilieming@warmrabit.com>",
   "contributors": [
     "lilieming <lilieming@warmrabit.com>"
@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lilieming/warmrabit-pixi-filters.git"
+    "url": "https://https://github.com/amoyjs/amoy-filters.git"
   },
   "files": [
     "lib",

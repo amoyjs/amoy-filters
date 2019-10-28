@@ -1,7 +1,6 @@
 import vertex from '../../default.vert';
 import fragment from './broken_cam_distortion.frag';
 import {Filter} from '@pixi/core';
-import { timingSafeEqual } from 'crypto';
 
 /**
  * The CRTFilter applies a CRT effect to an object.<br>

@@ -12,7 +12,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lilieming/warmrabit-pixi-filters.git"
+    "url": "https://github.com/amoyjs/amoy-filters.git"
   },
   "publishConfig": {
     "access": "public"
@@ -23,7 +23,6 @@
     "types.d.ts"
   ],
   "dependencies": {
-    "@amoy/filter-page-curl": "^1.0.0",
     "@pixi/core": "^5.0.0-X"
   }
 }

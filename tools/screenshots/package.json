@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "electron main.js"
+    "build": "electron main.js --debug"
   },
   "devDependencies": {
     "amoy-filters": "^1.0.0",

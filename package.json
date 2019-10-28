@@ -1,5 +1,5 @@
 {
-  "name": "amoy-filters-monorepo",
+  "name": "@amoy/filters",
   "private": true,
   "scripts": {
     "postinstall": "run-s bootstrap",

@@ -23,7 +23,6 @@
     "types.d.ts"
   ],
   "dependencies": {
-    "@amoy/filter-page-curl": "^1.0.0",
     "@pixi/core": "^5.0.0-X"
   }
 }

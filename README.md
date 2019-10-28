@@ -1,5 +1,5 @@
 # amoy-filters
-Amoy-filters 是基于pixijs，对pixi-filters的扩充。提供更丰富的2D游戏效果。
+Amoy-filters 是基于pixijs filter，类似pixi-filters库，提供丰富的常见的2D游戏效果。
 
 ## Demo
 Click [here](https://amoyjs.github.io/amoy-filters/tools/demo/index.html) to interactively play with filters to see how they work.

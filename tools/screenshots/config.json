@@ -49,7 +49,7 @@
         },
         {
             "name": "AmoyFlameFilter",
-            "filename": "flame-0",
+            "frame": "flame-0",
             "options":{
                 "posx": 100,
                 "posy": 100,
@@ -58,7 +58,7 @@
         },
         {
             "name": "AmoyFlameFilter",
-            "filename": "flame-1",
+            "frame": "flame-1",
             "options":{
                 "posx": 100,
                 "posy": 100,
@@ -67,7 +67,7 @@
         },
         {
             "name": "AmoyFlameFilter",
-            "filename": "flame-2",
+            "frame": "flame-2",
             "options":{
                 "posx": 100,
                 "posy": 100,
@@ -76,7 +76,7 @@
         },
         {
             "name": "AmoyFlameFilter",
-            "filename": "flame-3",
+            "frame": "flame-3",
             "options":{
                 "posx": 100,
                 "posy": 100,
@@ -85,7 +85,7 @@
         },
         {
             "name": "AmoyFlameFilter",
-            "filename": "flame-4",
+            "frame": "flame-4",
             "options":{
                 "posx": 100,
                 "posy": 100,
@@ -94,7 +94,7 @@
         },
         {
             "name": "AmoyFlameFilter",
-            "filename": "flame-5",
+            "frame": "flame-5",
             "options":{
                 "posx": 100,
                 "posy": 100
