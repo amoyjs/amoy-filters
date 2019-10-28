@@ -1,11 +1,12 @@
 /// <reference types="pixi.js" />
 declare module "@amoy/filter-lens-halo" {
     export class AmoyPageCurlFilter extends PIXI.Filter {
-        constructor(posx?:number, posy?:number, startPosx?:number, startPosy?:number, nextPageTexture?:HTMLImageElement|HTMLCanvasElement|PIXI.BaseTexture|PIXI.Texture);
+        constructor(posx?:number, posy?:number, startPosx?:number, startPosy?:number, nextPageTexture?:HTMLImageElement|HTMLCanvasElement|PIXI.BaseTexture|PIXI.Texture, radius?:number);
         posx:number;
         poxy:number;
         startPosx:number;
         startPoxy:number;
         nextPageTexture:PIXI.Texture;
+        radius:number;
     }
 }

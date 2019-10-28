@@ -10,8 +10,8 @@ uniform float uTime;
 void main(){
 	vec2 fragCoord=vTextureCoord*filterArea.xy;
 	vec2 uv=fragCoord.xy/filterArea.xy;
-	const float resolution=160.;
-	uv=floor(uv*resolution)/resolution;
+	const float resolution=160.;//步长
+	uv=floor(uv*resolution)/resolution;// 0 or 1
 	
 	vec3 color=texture2D(uSampler,uv).rgb;
 	

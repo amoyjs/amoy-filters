@@ -9,9 +9,11 @@ uniform float uPosx;
 uniform float uPosy;
 uniform float uStartPosx;
 uniform float uStartPosy;
+uniform float uRadius;
+
 
 #define pi 3.14159265359
-#define radius .08
+//#define uRadius .04
 
 #define iResolution filterArea
 #define iTime uTime
@@ -25,7 +27,7 @@ void main(void)
 	vec2 uv=vTextureCoord*filterArea.xy*vec2(aspect,1.)/iResolution.xy;
 	
 	vec4 virtualMouse=vec4(uPosx,uPosy,uStartPosx,uStartPosy);
-	
+	float radius = uRadius;
 	vec2 mouse=virtualMouse.xy*vec2(aspect,1.)/iResolution.xy;
 	vec2 mouseDir=normalize(abs(virtualMouse.zw)-virtualMouse.xy);
 	vec2 origin=clamp(mouse-mouseDir*mouse.x/mouseDir.x,0.,1.);
@@ -46,7 +48,7 @@ void main(void)
 	{
 		//下一页面
 		fragColor=texture(nextPageTexture,uv*vec2(1./aspect,1.));
-		fragColor.rgb*=pow(clamp(dist-radius,0.,1.)*1.5,.2);
+		fragColor.rgb*= clamp(min(1.0, .5 + 1. - uRadius/.04), 1.0, pow(clamp((dist-radius)*4.0,0.,1.),.2));
 	}
 	else if(dist>=0.)
 	{
@@ -60,12 +62,13 @@ void main(void)
 			uv = (1.0 - uv*vec2(1./aspect,1.));
 			uv.y = 1.0 - uv.y;
 			fragColor = texture(nextPageTexture, uv);
-			fragColor.rgb*=pow(clamp((radius-dist)/radius,0.,1.), .5);
+			fragColor.rgb*=clamp(min(1.0, .6 + 1. - uRadius/.04), 1.0, pow(clamp((radius-dist)/radius,0.,1.), .5));
 			fragColor.a = 1.;
 		}else{
+			//corer 圆角
 			uv = p1;
 			fragColor = texture(uSampler, uv * vec2(1. / aspect, 1.));
-			fragColor.rgb*=pow(clamp((radius-dist)/radius,0.,1.),1.);
+			fragColor.rgb*=clamp(.95, 1.0, pow(clamp((radius-dist)/radius,0.,1.),1.));
 		}
 	}
 	else

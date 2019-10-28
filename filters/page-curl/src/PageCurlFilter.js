@@ -9,7 +9,7 @@ import {Filter, Texture} from '@pixi/core';
  */
 
 class AmoyPageCurlFilter extends Filter{
-    constructor(posx = 0.0, posy = 0.0, startPosx = 0., startPosy = 0.0, nextPageTexture) {
+    constructor(posx = 0.0, posy = 0.0, startPosx = 0., startPosy = 0.0, nextPageTexture, radius=0.04) {
         super(vertex, fragment);
         // sub class
         this.posx = posx;
@@ -21,6 +21,8 @@ class AmoyPageCurlFilter extends Filter{
         this._sliceInnerSize = 0;
 
         this._scaleMode = null;
+
+        this.radius = radius;
 
         this.startPosx = startPosx;
         this.startPosy = startPosy;
@@ -35,7 +37,7 @@ class AmoyPageCurlFilter extends Filter{
     apply(filterManager, input, output, clear) {
         this.uniforms.uPosx = this.posx <= 0 ? 0.0 : this.posx;
         this.uniforms.uPosy = this.posy <= 0 ? 0.0 : this.posy;
-
+        this.uniforms.uRadius = this.radius;
         this.uniforms.uStartPosx = this.startPosx <= 0 ? 0.0 : this.startPosx;
         this.uniforms.uStartPosy = this.startPosy <= 0 ? 0.0 : this.startPosy;
 
@@ -52,6 +54,18 @@ class AmoyPageCurlFilter extends Filter{
     set posx(value) {
         this.uniforms.uPosx = value;
     }
+
+    /**
+     * current pos x
+     */
+    get radius() {
+        return this.uniforms.uRadius;
+    }
+
+    set radius(value) {
+        this.uniforms.uRadius = Math.max(Math.min(value, 0.04), 0.01);
+    }
+
 
     /**
      * current pos y
