@@ -1,0 +1,69 @@
+language: node_js
+node_js:
+  - "8"
+
+env:
+  - CXX=g++-4.8
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
+
+install:
+  - npm install xvfb-maybe
+  - npm install
+
+cache:
+  directories:
+    - node_modules
+
+before_script:
+  - export DISPLAY=':99.0'
+  - Xvfb :99 -screen 0 1024x768x24 -extension RANDR &
+
+script:
+  - xvfb-maybe npm run ci
+
+deploy:
+  - provider: s3
+    access_key_id: $S3_ACCESS_KEY_ID
+    secret_access_key: $S3_SECRET_ACCESS_KEY
+    bucket: "pixi-filters"
+    skip_cleanup: true
+    acl: public_read
+    local_dir: dist
+    upload-dir: "$TRAVIS_BRANCH"
+    cache_control: "max-age=60"
+    region: eu-west-1
+    on:
+      all_branches: true
+      condition: -z $TRAVIS_TAG
+  - provider: s3
+    access_key_id: $S3_ACCESS_KEY_ID
+    secret_access_key: $S3_SECRET_ACCESS_KEY
+    bucket: "pixi-filters"
+    skip_cleanup: true
+    acl: public_read
+    local_dir: dist
+    upload-dir: "$TRAVIS_BRANCH"
+    cache_control: "max-age=2592000"
+    region: eu-west-1
+    on:
+      all_branches: true
+      condition: $TRAVIS_TAG
+  - provider: s3
+    access_key_id: $S3_ACCESS_KEY_ID
+    secret_access_key: $S3_SECRET_ACCESS_KEY
+    bucket: "pixi-filters"
+    skip_cleanup: true
+    acl: public_read
+    local_dir: dist
+    region: eu-west-1
+    cache_control: "max-age=1209600"
+    upload-dir: "latest"
+    on:
+      all_branches: true
+      condition: $TRAVIS_TAG
