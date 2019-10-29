@@ -1,6 +1,7 @@
 {
   "name": "@amoy/filter-light-sweep",
   "version": "3.0.1",
+  "keywords":["pixi", "plugin" ,"filters 2d", "shader", "webgl"],
   "main": "lib/filter-light-sweep.cjs.js",
   "bundle": "dist/filter-light-sweep.js",
   "description": "PixiJS filter to apply an light-sweep effect",

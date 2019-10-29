@@ -1,6 +1,7 @@
 {
   "name": "@amoy/filter-lens-halo",
   "version": "3.0.1",
+  "keywords":["pixi", "plugin" ,"filters 2d", "shader", "webgl"],
   "main": "lib/filter-lens-halo.cjs.js",
   "bundle": "dist/filter-lens-halo.js",
   "description": "PixiJS filter to apply an lens-halo effect",

@@ -1,6 +1,7 @@
 {
   "name": "@amoy/filter-snow",
   "version": "3.0.1",
+  "keywords":["pixi", "plugin" ,"filters 2d", "shader", "webgl"],
   "main": "lib/filter-snow.cjs.js",
   "bundle": "dist/filter-snow.js",
   "description": "PixiJS filter to apply an snow effect",

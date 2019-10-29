@@ -1,6 +1,7 @@
 {
   "name": "@amoy/filter-weather-rainy",
   "version": "3.0.1",
+  "keywords":["pixi", "plugin" ,"filters 2d", "shader", "webgl"],
   "main": "lib/filter-weather-rainy.cjs.js",
   "bundle": "dist/filter-weather-rainy.js",
   "description": "PixiJS filter to apply an weather-rainy effect",

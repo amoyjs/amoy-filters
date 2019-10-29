@@ -1,6 +1,7 @@
 {
   "name": "@amoy/filter-rainfall",
   "version": "3.0.1",
+  "keywords":["pixi", "plugin" ,"filters 2d", "shader", "webgl"],
   "main": "lib/filter-rainfall.cjs.js",
   "bundle": "dist/filter-rainfall.js",
   "description": "PixiJS filter to apply an test effect",

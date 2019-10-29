@@ -1,6 +1,7 @@
 {
   "name": "@amoy/filter-flame",
   "version": "3.0.1",
+  "keywords":["pixi", "plugin" ,"filters 2d", "shader", "webgl"],
   "main": "lib/filter-flame.cjs.js",
   "bundle": "dist/filter-flame.js",
   "description": "PixiJS filter to apply an flame effect",

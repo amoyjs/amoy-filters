@@ -1,6 +1,7 @@
 {
   "name": "@amoy/filter-broken-cam-distortion",
   "version": "3.0.1",
+  "keywords":["pixi", "plugin" ,"filters 2d", "shader", "webgl"],
   "main": "lib/filter-broken-cam-distortion.cjs.js",
   "bundle": "dist/filter-broken-cam-distortion.js",
   "description": "PixiJS filter to apply an broken-cam-distortion effect",

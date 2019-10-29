@@ -4,8 +4,9 @@
   "main": "lib/amoy-filters.cjs.js",
   "description": "PixiJS v5 optional display filters",
   "author": "lilieming <lilieming@warmrabit.com>",
+  "keywords":["pixi", "plugin" ,"filters 2d", "shader", "webgl"],
   "contributors": [
-    "lilieming <lilieming@warmrabit.com>"
+    "lilieming <liliemingwork@163.com>"
   ],
   "module": "lib/amoy-filters.esm.js",
   "bundle": "dist/amoy-filters.js",
