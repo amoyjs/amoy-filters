@@ -52,10 +52,10 @@ yarn add @amoy/filters
 
 ```html
 <script src="https://pixijs.download/release/pixi.min.js"></script>
-<script src="pixi-filters/dist/amoy-filters.js"></script>
+<script src="/dist/amoy-filters.js"></script>
 ```
 ```js
-var filter = new PIXI.filters.MosaicFilter();
+var filter = new PIXI.filters.AmoyMosaicFilter();
 ```
 
 ### Bundler (Rollup, Webpack, etc)
@@ -63,8 +63,8 @@ var filter = new PIXI.filters.MosaicFilter();
 Use ES6+ imports to import the specific filter. _Note: `PIXI` global is not accessible when building with bundlers._
 
 ```js
-import { MosaicFilter } from 'amoy-filters';
-const filter = new MosaicFilter();
+import { AmoyMosaicFilter } from 'amoy-filters';
+const filter = new AmoyMosaicFilter();
 ```
 
 ## Documentation
