@@ -31,7 +31,7 @@ deploy:
   - provider: s3
     access_key_id: $S3_ACCESS_KEY_ID
     secret_access_key: $S3_SECRET_ACCESS_KEY
-    bucket: "pixi-filters"
+    bucket: "amoy-filters"
     skip_cleanup: true
     acl: public_read
     local_dir: dist
@@ -44,7 +44,7 @@ deploy:
   - provider: s3
     access_key_id: $S3_ACCESS_KEY_ID
     secret_access_key: $S3_SECRET_ACCESS_KEY
-    bucket: "pixi-filters"
+    bucket: "amoy-filters"
     skip_cleanup: true
     acl: public_read
     local_dir: dist
@@ -57,7 +57,7 @@ deploy:
   - provider: s3
     access_key_id: $S3_ACCESS_KEY_ID
     secret_access_key: $S3_SECRET_ACCESS_KEY
-    bucket: "pixi-filters"
+    bucket: "amoy-filters"
     skip_cleanup: true
     acl: public_read
     local_dir: dist
