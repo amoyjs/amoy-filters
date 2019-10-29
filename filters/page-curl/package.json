@@ -1,7 +1,13 @@
 {
   "name": "@amoy/filter-page-curl",
-  "version": "3.0.1",
-  "keywords":["pixi", "plugin" ,"filters 2d", "shader", "webgl"],
+  "version": "3.0.2",
+  "keywords": [
+    "pixi",
+    "plugin",
+    "filters 2d",
+    "shader",
+    "webgl"
+  ],
   "main": "lib/filter-page-curl.cjs.js",
   "bundle": "dist/filter-page-curl.js",
   "description": "PixiJS filter to apply an page-curl effect",

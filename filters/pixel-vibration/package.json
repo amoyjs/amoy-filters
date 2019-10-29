@@ -1,7 +1,13 @@
 {
   "name": "@amoy/filter-pixel-vibration",
-  "version": "3.0.1",
-  "keywords":["pixi", "plugin" ,"filters 2d", "shader", "webgl"],
+  "version": "3.0.2",
+  "keywords": [
+    "pixi",
+    "plugin",
+    "filters 2d",
+    "shader",
+    "webgl"
+  ],
   "main": "lib/filter-pixel-vibration.cjs.js",
   "bundle": "dist/filter-pixel-vibration.js",
   "description": "PixiJS filter to apply an pixel-vibration effect",

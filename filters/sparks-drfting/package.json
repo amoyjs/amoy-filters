@@ -1,7 +1,13 @@
 {
   "name": "@amoy/filter-sparks-drifting",
-  "version": "3.0.1",
-  "keywords":["pixi", "plugin" ,"filters 2d", "shader", "webgl"],
+  "version": "3.0.2",
+  "keywords": [
+    "pixi",
+    "plugin",
+    "filters 2d",
+    "shader",
+    "webgl"
+  ],
   "main": "lib/filter-sparks-drifting.cjs.js",
   "bundle": "dist/filter-sparks-drifting.js",
   "description": "PixiJS filter to apply an lens-halo effect",

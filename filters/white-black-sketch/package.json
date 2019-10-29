@@ -1,7 +1,13 @@
 {
   "name": "@amoy/filter-white-black-sketch",
-  "version": "3.0.1",
-  "keywords":["pixi", "plugin" ,"filters 2d", "shader", "webgl"],
+  "version": "3.0.2",
+  "keywords": [
+    "pixi",
+    "plugin",
+    "filters 2d",
+    "shader",
+    "webgl"
+  ],
   "main": "lib/filter-white-black-sketch.cjs.js",
   "bundle": "dist/filter-white-black-sketch.js",
   "description": "PixiJS filter to apply an white-black-sketch effect",

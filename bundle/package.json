@@ -1,10 +1,16 @@
 {
   "name": "@amoy/filters",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "main": "lib/amoy-filters.cjs.js",
   "description": "PixiJS v5 optional display filters",
   "author": "lilieming <lilieming@warmrabit.com>",
-  "keywords":["pixi", "plugin" ,"filters 2d", "shader", "webgl"],
+  "keywords": [
+    "pixi",
+    "plugin",
+    "filters 2d",
+    "shader",
+    "webgl"
+  ],
   "contributors": [
     "lilieming <liliemingwork@163.com>"
   ],
@@ -27,24 +33,24 @@
     "types.d.ts"
   ],
   "dependencies": {
-    "@amoy/filter-broken-cam-distortion": "^3.0.1",
-    "@amoy/filter-flame": "^3.0.1",
-    "@amoy/filter-gameboy-style": "^3.0.1",
-    "@amoy/filter-lens-halo": "^3.0.1",
-    "@amoy/filter-light-sweep": "^3.0.1",
-    "@amoy/filter-light2d": "^3.0.1",
-    "@amoy/filter-mosaic": "^3.0.1",
-    "@amoy/filter-page-curl": "^3.0.1",
-    "@amoy/filter-pixel-vibration": "^3.0.1",
-    "@amoy/filter-rainfall": "^3.0.1",
-    "@amoy/filter-reflection": "^3.0.1",
-    "@amoy/filter-snow": "^3.0.1",
-    "@amoy/filter-sparks-drifting": "^3.0.1",
-    "@amoy/filter-vcr": "^3.0.1",
-    "@amoy/filter-water-reflection": "^3.0.1",
-    "@amoy/filter-weather-cloud": "^3.0.1",
-    "@amoy/filter-weather-rainy": "^3.0.1",
-    "@amoy/filter-white-black-sketch": "^3.0.1"
+    "@amoy/filter-broken-cam-distortion": "^3.0.2",
+    "@amoy/filter-flame": "^3.0.2",
+    "@amoy/filter-gameboy-style": "^3.0.2",
+    "@amoy/filter-lens-halo": "^3.0.2",
+    "@amoy/filter-light-sweep": "^3.0.2",
+    "@amoy/filter-light2d": "^3.0.2",
+    "@amoy/filter-mosaic": "^3.0.2",
+    "@amoy/filter-page-curl": "^3.0.2",
+    "@amoy/filter-pixel-vibration": "^3.0.2",
+    "@amoy/filter-rainfall": "^3.0.2",
+    "@amoy/filter-reflection": "^3.0.2",
+    "@amoy/filter-snow": "^3.0.2",
+    "@amoy/filter-sparks-drifting": "^3.0.2",
+    "@amoy/filter-vcr": "^3.0.2",
+    "@amoy/filter-water-reflection": "^3.0.2",
+    "@amoy/filter-weather-cloud": "^3.0.2",
+    "@amoy/filter-weather-rainy": "^3.0.2",
+    "@amoy/filter-white-black-sketch": "^3.0.2"
   },
   "gitHead": "6bb437322b014dce8732ecacd3602ff48414e249"
 }
