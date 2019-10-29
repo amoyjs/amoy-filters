@@ -16,9 +16,9 @@ Click [here](https://amoyjs.github.io/amoy-filters/docs/index.html) to see how t
 |---|---|
 | **AmoyPixelVibrationFilter**<br>_@amoy/filter-pixel-vibration_ | ![pixel-vibration](https://amoyjs.github.io/amoy-filters/tools/screenshots/dist/pixel-vibration.png?v=2) |
 | **AmoyWiteBlackSketchFilter**<br>_@amoy/filter-white-black-sketch_ | ![white-black-sketch](https://amoyjs.github.io/amoy-filters/tools/screenshots/dist/white-black-sketch.png?v=2) |
-| **AmoyFlameFilter**<br>_@amoy/filter-flame_ | ![flame](https://amoyjs.github.io/amoy-filters/tools/screenshots/dist/AmoyFlameFilter.png?v=2) |
+| **AmoyFlameFilter**<br>_@amoy/filter-flame_ | ![flame](https://amoyjs.github.io/amoy-filters/tools/screenshots/dist/AmoyFlameFilter.gif?v=2) |
 white-black-sketch.png?v=2) |
-| **AmoyRainfallFilter**<br>_@amoy/filter-rainfall_ | ![rainfall](https://amoyjs.github.io/amoy-filters/tools/screenshots/dist/AmoyRainfallFilter.png?v=2) |
+| **AmoyRainfallFilter**<br>_@amoy/filter-rainfall_ | ![rainfall](https://amoyjs.github.io/amoy-filters/tools/screenshots/dist/AmoyRainfallFilter.gif?v=2) |
 
 
 
