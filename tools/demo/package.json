@@ -23,7 +23,7 @@
     "rollup-watch": "^4.3.1"
   },
   "dependencies": {
-    "@amoy/filter-page-curl": "^3.0.2",
+    "@amoy/filters": "^3.0.2",
     "pixi.js": "^5.0.0-X"
   }
 }
