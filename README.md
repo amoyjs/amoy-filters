@@ -1,4 +1,7 @@
 # amoy-filters
+
+[![Build Status](https://travis-ci.org/amoyjs/amoy-filters.svg?branch=master)](https://travis-ci.org/amoyjs/amoy-filters)
+
 Amoy-filters 是基于pixijs filter，类似pixi-filters库，提供丰富的常见的2D游戏效果。
 
 ## Demo
@@ -8,6 +11,16 @@ Click [here](https://amoyjs.github.io/amoy-filters/tools/demo/index.html) to int
 Click [here](https://amoyjs.github.io/amoy-filters/docs/index.html) to see how to use it.
 
 ## Filters
+
+| Filter | Preview |
+|---|---|
+| **AmoyPixelVibrationFilter**<br>_@amoy/filter-pixel-vibration_ | ![adjustment](https://pixijs.github.io/pixi-filters/tools/screenshots/dist/pixel-vibration.png?v=2) |
+| **AmoyWiteBlackSketchFilter**<br>_@amoy/filter-white-black-sketch_ | ![advanced-bloom](https://pixijs.github.io/pixi-filters/tools/screenshots/dist/white-black-sketch.png?v=2) |
+| **AmoyFlameFilter**<br>_@amoy/filter-flame_ | ![advanced-bloom](https://pixijs.github.io/pixi-filters/tools/screenshots/dist/AmoyFlameFilter.png?v=2) |
+white-black-sketch.png?v=2) |
+| **AmoyRainfallFilter**<br>_@amoy/filter-rainfall_ | ![advanced-bloom](https://pixijs.github.io/pixi-filters/tools/screenshots/dist/AmoyRainfallFilter.png?v=2) |
+
+
 
 All filters work with PixiJS v5.
 
