@@ -4,8 +4,7 @@ node_modules
 lib
 *.log
 docs
-filters/*/dist
-Bundle/dist
+dist
 tools/demo/index.js
 tools/demo/index.js.map
 .DS_Store

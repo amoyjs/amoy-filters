@@ -1,5 +1,5 @@
 
-declare module "amoy-filters" {
+declare module "@amoy/filters" {
     export * from "@amoy/filter-rainfall";
     export * from "@amoy/filter-mosaic";
     export * from "@amoy/filter-pixel-vibration";

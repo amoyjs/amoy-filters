@@ -22,7 +22,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://https://github.com/amoyjs/amoy-filters.git"
+    "url": "https://github.com/amoyjs/amoy-filters.git"
   },
   "publishConfig": {
     "access": "public"
