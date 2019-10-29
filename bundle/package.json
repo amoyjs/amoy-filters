@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filters",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "main": "lib/amoy-filters.cjs.js",
   "description": "PixiJS v5 optional display filters",
   "author": "lilieming <lilieminglook@gmail.com>",
