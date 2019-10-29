@@ -7,7 +7,7 @@
     "build:dev": "electron main.js --debug"
   },
   "devDependencies": {
-    "amoy-filters": "^1.0.0",
+    "@amoy/filters": "^3.0.2",
     "base64-to-image": "^1.0.2",
     "electron": "^4.0.1",
     "fs-extra": "^7.0.1",
