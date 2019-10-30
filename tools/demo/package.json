@@ -10,7 +10,7 @@
     "watch": "rollup -cwm"
   },
   "devDependencies": {
-    "@amoy/filters": "^3.0.2",
+    "@amoy/filters": "^3.0.5",
     "cross-env": "^5.2.0",
     "rimraf": "^2.6.3",
     "rollup": "^1.11.3",

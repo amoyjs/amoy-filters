@@ -1,5 +1,5 @@
 const PIXI = require('pixi.js');
-const filters = require('amoy-filters');
+const filters = require('@amoy/filters');
 const assert = require('assert');
 const config = require('./config.json');
 const base64ToImage = require('base64-to-image');

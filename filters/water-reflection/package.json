@@ -30,7 +30,6 @@
     "types.d.ts"
   ],
   "dependencies": {
-    "@amoy/filter-page-curl": "^3.0.2",
     "@pixi/core": "^5.0.0-X"
   },
   "gitHead": "6bb437322b014dce8732ecacd3602ff48414e249"

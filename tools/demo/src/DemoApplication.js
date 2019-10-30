@@ -1,4 +1,4 @@
-import * as filters from "amoy-filters";
+import * as filters from "@amoy/filters";
 import {
   Application,
   settings,

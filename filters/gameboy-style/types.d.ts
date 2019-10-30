@@ -1,5 +1,5 @@
 /// <reference types="pixi.js" />
-declare module "@amoy/filter-lens-halo" {
+declare module "@amoy/filter-gameboy-style" {
     export class AmoyGameboyStyleFilter extends PIXI.Filter {
         constructor();
     }
