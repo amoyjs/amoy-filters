@@ -1,7 +1,5 @@
 # amoy-filters
 
-[![Build Status](https://travis-ci.org/amoyjs/amoy-filters.svg?branch=master)](https://travis-ci.org/amoyjs/amoy-filters)
-
 Amoy-filters 是基于pixijs filter，类似pixi-filters库，提供丰富的常见的2D游戏效果。
 
 ## Demo
