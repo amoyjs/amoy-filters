@@ -1,8 +1,6 @@
 
 # Amoy Filters
 
-[![Build Status](https://travis-ci.org/amoyjs/amoy-filters.svg?branch=master)](https://travis-ci.org/amoyjs/amoy-filters) [![CDNJS](https://img.shields.io/cdnjs/v/amoy-filters.svg)](https://cdnjs.com/libraries/amoy-filters)
-
 PixiJS v5 optional display filters.
 
 Filters include:
