@@ -1,5 +1,7 @@
 # amoy-filters
 
+[![Build Status](https://travis-ci.org/amoyjs/amoy-filters.svg?branch=master)](https://travis-ci.org/amoyjs/amoy-filters)
+
 Amoy-filters are based on pixijs filter, similar to pixi-filters library, providing rich and common 2D game effects!
 
 ## Demo
