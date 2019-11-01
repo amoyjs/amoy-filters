@@ -33,13 +33,13 @@ npm run build
 Build single filter by running the following:
 
 ```bash
-npm run build:prod -- --scope "@pixi/filter-flame"
+npm run build:prod -- --scope "@amoy/filter-flame"
 ```
 
 Build multiple filters where scope is a glob expression:
 
 ```bash
-npm run build:prod -- --scope "{@pixi/filter-light2d,@pixi/filter-mosaic}"
+npm run build:prod -- --scope "{@amoy/filter-light2d,@amoy/filter-mosaic}"
 ```
 
 Watch all filters (auto-rebuild upon src changes):
