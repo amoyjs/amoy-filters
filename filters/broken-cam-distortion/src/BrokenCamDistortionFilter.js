@@ -9,7 +9,7 @@ import {Filter} from '@pixi/core';
  * @class
  * @extends PIXI.Filter
  * @memberof AMOY.filters
- *  @param {number} [delta=0] - For animating interlaced lines
+ * @param {number} [delta=0] - For animating interlaced lines
  */
 
 class AmoyBrokenCamDistortionFilter extends Filter{

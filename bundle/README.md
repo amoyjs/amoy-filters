@@ -29,7 +29,7 @@ Filters include:
 
 ## Examples
 
-Click [here](http://amoyjs.io/amoy-filters/tools/demo/) for filter demos.
+Click [here](https://amoyjs.github.io/amoy-filters/tools/demo/index.html) for filter demos.
 
 ## Installation
 
