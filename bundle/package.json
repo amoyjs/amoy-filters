@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filters",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "main": "lib/amoy-filters.cjs.js",
   "description": "PixiJS v5 optional display filters",
   "author": "lilieming <lilieminglook@gmail.com>",
@@ -33,7 +33,7 @@
     "types.d.ts"
   ],
   "dependencies": {
-    "@amoy/filter-broken-cam-distortion": "^3.0.6",
+    "@amoy/filter-broken-cam-distortion": "^3.0.7",
     "@amoy/filter-flame": "^3.0.6",
     "@amoy/filter-gameboy-style": "^3.0.6",
     "@amoy/filter-lens-halo": "^3.0.6",
