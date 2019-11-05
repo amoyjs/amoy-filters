@@ -1,13 +1,13 @@
 {
   "name": "@tools/screenshots",
   "private": true,
-  "version": "3.0.8",
+  "version": "3.0.9",
   "scripts": {
     "build": "electron main.js",
     "build:dev": "electron main.js --debug"
   },
   "devDependencies": {
-    "@amoy/filters": "^3.0.8",
+    "@amoy/filters": "^3.0.9",
     "base64-to-image": "^1.0.2",
     "electron": "^4.0.1",
     "fs-extra": "^7.0.1",
