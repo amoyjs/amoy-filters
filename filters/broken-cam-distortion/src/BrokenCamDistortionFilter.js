@@ -4,14 +4,14 @@ import {Filter} from '@pixi/core';
 
 
 /**
- * The CRTFilter applies a CRT effect to an object.<br>
- * ![original](../tools/screenshots/dist/original.png)![filter](../tools/screenshots/dist/broken-cam-distortion.gif)
+ * The AmoyBrokenCamDistortionFilter applies the effect to an object.<br>
+ * ![original](../tools/screenshots/dist/original.png)![filter](../tools/screenshots/dist/AmoyBrokenCamDistortionFilter.gif)
  *
  * @class
  * @extends PIXI.Filter
  * @memberof AMOY.filters
- * @see {@link https://www.npmjs.com/package/@amoy/broken-cam-distortion|@amoy/broken-cam-distortion}
- * @see {@link https://www.npmjs.com/package/@amoy/filters|@amoy/filters}
+ * @see {@link https://www.npmjs.com/package/@amoy/filter-broken-cam-distortion}
+ * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @param {number} [delta=0] - For animating interlaced lines
  */
 

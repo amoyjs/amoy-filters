@@ -4,8 +4,14 @@ import {Filter, Texture} from '@pixi/core';
 
 /**
  * @class
+ * @see {@link https://www.npmjs.com/package/@amoy/page-curl}
+ * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof AMOY.filters
+ * @param {number} [posx=0.] drag moving x position
+ * @param {number} [posy=0.] drag moving y position
+ * @param {number} [startPosx=0.] drag start x position
+ * @param {number} [startPosy=0.] drag start y position
  */
 
 class AmoyPageCurlFilter extends Filter{

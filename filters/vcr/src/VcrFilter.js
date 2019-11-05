@@ -4,8 +4,11 @@ import {Filter} from '@pixi/core';
 
 /**
  * @class
+ * @see {@link https://www.npmjs.com/package/@amoy/filter-vcr}
+ * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof AMOY.filters
+ * @param {number} [delta] time for shader animation
  */
 
 class AmoyVcrFilter extends Filter{

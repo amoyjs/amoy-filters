@@ -8,6 +8,7 @@ import {Filter} from '@pixi/core';
  * @see {@link https://www.npmjs.com/package/@amoy/weather-rainy|@amoy/weather-rainy}
  * @see {@link https://www.npmjs.com/package/@amoy/filters|@amoy/filters}
  * @memberof AMOY.filters
+ * @param {number} [delta = 0] time for animation
  */
 
 class AmoyWeatherRainyFilter extends Filter{

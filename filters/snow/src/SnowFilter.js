@@ -4,8 +4,12 @@ import {Filter} from '@pixi/core';
 
 /**
  * @class
+ * @see {@link https://www.npmjs.com/package/@amoy/snow}
+ * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof AMOY.filters
+ * @param {Boolen} [blizard=false] snow mode true or false
+ * @param {number} [delta=0] time for animation
  */
 
 class AmoySnowFilter extends Filter{

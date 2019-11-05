@@ -3,7 +3,13 @@ import fragment from './gameboystyle.frag';
 import {Filter} from '@pixi/core';
 
 /**
+ * 
+ *  * The AmoyGameboyStyleFilter applies the effect to an object.<br>
+ * ![original](../tools/screenshots/dist/original.png)![filter](../tools/screenshots/dist/AmoyGameboyStyleFilter.png)
+ *
  * @class
+ * @see {@link https://www.npmjs.com/package/@amoy/filter-gameboy-style}
+ * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof AMOY.filters
  */

@@ -1,6 +1,6 @@
 export default function() {
     const app = this;
-    app.addFilter('InnerOutlineFilter', {
+    app.addFilter('AmoyInnerOutlineFilter', {
         enabled: false,
         global: false,
         opened: false,

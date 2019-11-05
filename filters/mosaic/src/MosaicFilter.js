@@ -5,6 +5,8 @@ import {Filter} from '@pixi/core';
 /**
  * The NTMosaicFilter applies a mosaic effect to an object.<br>
  * @class
+ * @see {@link https://www.npmjs.com/package/@amoy/mosaic}
+ * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof PIXI.filters
  * @param {number} [tileSize=32] - The maximum size of the tilesize is 64

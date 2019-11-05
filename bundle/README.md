@@ -1,6 +1,6 @@
 
 # Amoy Filters
-
+[![Build Status](https://travis-ci.org/amoyjs/amoy-filters.svg?branch=master)](https://travis-ci.org/amoyjs/amoy-filters)
 PixiJS v5 optional display filters.
 
 Filters include:
@@ -23,7 +23,7 @@ Filters include:
 * **AmoyWaterReflection** _@amoy/filter-water-reflection_
 * **AmoyWeatherRainy** _@amoy/filter-weather-rainy_
 * **AmoyWeatherCloud** _@amoy/filter-weather-cloud_
-* **InnerOutlineFilter** _@amoy/filter-inner-outline_
+* **AmoyInnerOutlineFilter** _@amoy/filter-inner-outline_
 
 
 ## Examples

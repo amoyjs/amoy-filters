@@ -5,9 +5,11 @@ import {Filter} from '@pixi/core';
 /**
  * @class
  * @extends PIXI.Filter
- * @see {@link https://www.npmjs.com/package/@amoy/white-black-sketch|@amoy/white-black-sketch}
- * @see {@link https://www.npmjs.com/package/@amoy/filters|@amoy/filters}
+ * @see {@link https://www.npmjs.com/package/@amoy/filter-white-black-sketch}
+ * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @memberof AMOY.filters
+ * @param {boolean} [invertColor = false] invertcolor true or false
+ * @param {number} [delta = 0] time for animation
  */
 
 class AmoyWhiteBlackSketchFilter extends Filter{

@@ -3,9 +3,16 @@ import fragment from './rainfall.frag';
 import {Filter} from '@pixi/core';
 
 /**
+ * The AmoyRainfallFilter applies the effect to an object.<br>
+ * ![original](../tools/screenshots/dist/original.png)![filter](../tools/screenshots/dist/AmoyRainfallFilter.gif)
+ *
  * @class
+ * @see {@link https://www.npmjs.com/package/@amoy/rainfall}
+ * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof AMOY.filters
+ * @param {number} [rainR=2.0] rain numbers 
+ * @param {number} {delta=0} time for shader animation
  */
 
 class AmoyRainfallFilter extends Filter{

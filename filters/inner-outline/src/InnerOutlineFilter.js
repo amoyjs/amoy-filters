@@ -3,12 +3,19 @@ import fragment from './inneroutline.frag';
 import {Filter} from '@pixi/core';
 
 /**
+ * The AmoyInnerOutlineFilter applies the effect to an object.<br>
+ * ![original](../tools/screenshots/dist/original.png)![filter](../tools/screenshots/dist/AmoyInnerOutlineFilter.gif)
+ *
  * @class
+ * @see {@link https://www.npmjs.com/package/@amoy/filter-gameboy-style}
+ * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof AMOY.filters
+ * @param {Object} [color={r:1.0, g:0, b:0}] outline color
+ * @param {number} [delta=0.0] time for shader animation
  */
 
-class InnerOutlineFilter extends Filter{
+class AmoyInnerOutlineFilter extends Filter{
     constructor(color={r:1.0, g:0, b:0}, delta = 0.0) {
         super(vertex, fragment);
         this.uniforms.uColor  = new Float32Array(3);
@@ -54,4 +61,4 @@ class InnerOutlineFilter extends Filter{
     }
 }
 
-export { InnerOutlineFilter };
+export { AmoyInnerOutlineFilter };

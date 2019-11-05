@@ -4,8 +4,14 @@ import {Filter} from '@pixi/core';
 
 /**
  * @class
+ * @see {@link https://www.npmjs.com/package/@amoy/spark-drfting}
+ * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof AMOY.filters
+ * @param {number} [height=0.0] spark height
+ * @param {number} [widht=0.0] spark width
+ * @param {number} [strength=0.0] strength
+ * @param {number} [delta=0.0] time for shader animation
  */
 
 class AmoySparksDriftingFilter extends Filter{

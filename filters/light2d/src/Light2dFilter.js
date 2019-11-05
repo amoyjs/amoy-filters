@@ -4,8 +4,12 @@ import { Filter } from '@pixi/core';
 
 /**
  * @class
+ * @see {@link https://www.npmjs.com/package/@amoy/light2d}
+ * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof AMOY.filters
+ * @param {number} [posx=10.0] light  x position
+ * @param {number} [posy=10.0] light  y position
  */
 
 class AmoyLight2dFilter extends Filter {

@@ -4,10 +4,11 @@ import {Filter} from '@pixi/core';
 
 /**
  * @class
+ * @see {@link https://www.npmjs.com/package/@amoy/filter-weather-reflection}
+ * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
- * @see {@link https://www.npmjs.com/package/@amoy/weather-reflection|@amoy/weather-reflection}
- * @see {@link https://www.npmjs.com/package/@amoy/filters|@amoy/filters}
  * @memberof AMOY.filters
+ * @param {number} [delta = 0] time for animation
  */
 
 class AmoyWaterReflectionFilter extends Filter{

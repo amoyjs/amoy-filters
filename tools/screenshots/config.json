@@ -23,9 +23,82 @@
                 "flame-4",
                 "flame-5"
             ]
+        },
+        {
+            "filename": "AmoyWhiteBlackSketchFilter",
+            "delay": 200,
+            "frames": [
+                "AmoyWhiteBlackSketchFilter-0",
+                "AmoyWhiteBlackSketchFilter-1",
+                "AmoyWhiteBlackSketchFilter-2",
+                "AmoyWhiteBlackSketchFilter-3",
+                "AmoyWhiteBlackSketchFilter-4",
+                "AmoyWhiteBlackSketchFilter-5"
+            ]
+        },
+        {
+            "filename": "AmoyBrokenCamDistortionFilter",
+            "delay": 200,
+            "frames": [
+                "AmoyBrokenCamDistortionFilter-0",
+                "AmoyBrokenCamDistortionFilter-1",
+                "AmoyBrokenCamDistortionFilter-2",
+                "AmoyBrokenCamDistortionFilter-3",
+                "AmoyBrokenCamDistortionFilter-4",
+                "AmoyBrokenCamDistortionFilter-5"
+            ]
+        },
+        {
+            "filename": "AmoyInnerOutlineFilter",
+            "delay": 200,
+            "frames": [
+                "AmoyInnerOutlineFilter-0",
+                "AmoyInnerOutlineFilter-1",
+                "AmoyInnerOutlineFilter-2",
+                "AmoyInnerOutlineFilter-3",
+                "AmoyInnerOutlineFilter-4",
+                "AmoyInnerOutlineFilter-5"
+            ]
+        },
+        {
+            "filename": "AmoyLensHaloFilter",
+            "delay": 200,
+            "frames": [
+                "AmoyLensHaloFilter-0",
+                "AmoyLensHaloFilter-1",
+                "AmoyLensHaloFilter-2",
+                "AmoyLensHaloFilter-3",
+                "AmoyLensHaloFilter-4",
+                "AmoyLensHaloFilter-5"
+            ]
+        },
+        {
+            "filename": "AmoyLightSweepFilter",
+            "delay": 200,
+            "frames": [
+                "AmoyLightSweepFilter-0",
+                "AmoyLightSweepFilter-1",
+                "AmoyLightSweepFilter-2",
+                "AmoyLightSweepFilter-3",
+                "AmoyLightSweepFilter-4",
+                "AmoyLightSweepFilter-5"
+            ]
         }
     ],
     "images" : [
+        {
+            "name": "AmoyGameboyStyleFilter",
+            "filename": "AmoyGameboyStyleFilter",
+            "options":{
+            }
+        },
+        {
+            "name": "AmoyPixelVibrationFilter",
+            "filename": "pixel-vibration",
+            "options":{
+                "delta": 0.3
+            }
+        },
         {
             "name": "AmoyMosaicFilter",
             "filename": "mosaic",
@@ -35,16 +108,44 @@
         },
         {
             "name": "AmoyWhiteBlackSketchFilter",
-            "filename": "white-black-sketch",
+            "frame": "AmoyWhiteBlackSketchFilter-0",
             "options":{
                 "delta": 0.3
             }
         },
         {
-            "name": "AmoyPixelVibrationFilter",
-            "filename": "pixel-vibration",
+            "name": "AmoyWhiteBlackSketchFilter",
+            "frame": "AmoyWhiteBlackSketchFilter-1",
             "options":{
-                "delta": 0.3
+                "delta": 0.06
+            }
+        },
+        {
+            "name": "AmoyWhiteBlackSketchFilter",
+            "frame": "AmoyWhiteBlackSketchFilter-2",
+            "options":{
+                "delta": 0.09
+            }
+        },
+        {
+            "name": "AmoyWhiteBlackSketchFilter",
+            "frame": "AmoyWhiteBlackSketchFilter-3",
+            "options":{
+                "delta": 0.12
+            }
+        },
+        {
+            "name": "AmoyWhiteBlackSketchFilter",
+            "frame": "AmoyWhiteBlackSketchFilter-4",
+            "options":{
+                "delta": 0.15
+            }
+        },
+        {
+            "name": "AmoyWhiteBlackSketchFilter",
+            "frame": "AmoyWhiteBlackSketchFilter-5",
+            "options":{
+                "delta": 0.18
             }
         },
         {
@@ -145,6 +246,188 @@
             "frame": "rainfall-5",
             "options": {
                 "rainR": 10.0,
+                "delta": 0.14
+            }
+        },
+        {
+            "name": "AmoyBrokenCamDistortionFilter",
+            "frame": "AmoyBrokenCamDistortionFilter-0",
+            "options": {
+                "delta": 0.0
+            }
+        },
+        {
+            "name": "AmoyBrokenCamDistortionFilter",
+            "frame": "AmoyBrokenCamDistortionFilter-1",
+            "options": {
+                "delta": 0.01
+            }
+        },
+        {
+            "name": "AmoyBrokenCamDistortionFilter",
+            "frame": "AmoyBrokenCamDistortionFilter-2",
+            "options": {
+                "delta": 0.04
+            }
+        },
+        {
+            "name": "AmoyBrokenCamDistortionFilter",
+            "frame": "AmoyBrokenCamDistortionFilter-3",
+            "options": {
+                "delta": 0.08
+            }
+        },
+        {
+            "name": "AmoyBrokenCamDistortionFilter",
+            "frame": "AmoyBrokenCamDistortionFilter-4",
+            "options": {
+                "delta": 0.1
+            }
+        },
+        {
+            "name": "AmoyBrokenCamDistortionFilter",
+            "frame": "AmoyBrokenCamDistortionFilter-5",
+            "options": {
+                "delta": 0.14
+            }
+        }
+        ,
+        {
+            "name": "AmoyInnerOutlineFilter",
+            "frame": "AmoyInnerOutlineFilter-0",
+            "options": {
+                "delta": 0.0
+            }
+        },
+        {
+            "name": "AmoyInnerOutlineFilter",
+            "frame": "AmoyInnerOutlineFilter-1",
+            "options": {
+                "delta": 0.01
+            }
+        },
+        {
+            "name": "AmoyInnerOutlineFilter",
+            "frame": "AmoyInnerOutlineFilter-2",
+            "options": {
+                "delta": 0.04
+            }
+        },
+        {
+            "name": "AmoyInnerOutlineFilter",
+            "frame": "AmoyInnerOutlineFilter-3",
+            "options": {
+                "delta": 0.08
+            }
+        },
+        {
+            "name": "AmoyInnerOutlineFilter",
+            "frame": "AmoyInnerOutlineFilter-4",
+            "options": {
+                "delta": 0.1
+            }
+        },
+        {
+            "name": "AmoyInnerOutlineFilter",
+            "frame": "AmoyInnerOutlineFilter-5",
+            "options": {
+                "delta": 0.14
+            }
+        }
+        ,
+        {
+            "name": "AmoyLensHaloFilter",
+            "frame": "AmoyLensHaloFilter-0",
+            "options": {
+                "posx": 100,
+                "posy": 100,
+                "delta": 0.0
+            }
+        },
+        {
+            "name": "AmoyLensHaloFilter",
+            "frame": "AmoyLensHaloFilter-1",
+            "options": {
+                "posx": 100,
+                "posy": 100,
+                "delta": 0.01
+            }
+        },
+        {
+            "name": "AmoyLensHaloFilter",
+            "frame": "AmoyLensHaloFilter-2",
+            "options": {
+                "posx": 120,
+                "posy": 100,
+                "delta": 0.04
+            }
+        },
+        {
+            "name": "AmoyLensHaloFilter",
+            "frame": "AmoyLensHaloFilter-3",
+            "options": {
+                "posx": 110,
+                "posy": 100,
+                "delta": 0.08
+            }
+        },
+        {
+            "name": "AmoyLensHaloFilter",
+            "frame": "AmoyLensHaloFilter-4",
+            "options": {
+                "posx": 100,
+                "posy": 110,
+                "delta": 0.1
+            }
+        },
+        {
+            "name": "AmoyLensHaloFilter",
+            "frame": "AmoyLensHaloFilter-5",
+            "options": {
+                "posx": 100,
+                "posy": 100,
+                "delta": 0.14
+            }
+        },
+        {
+            "name": "AmoyLightSweepFilter",
+            "frame": "AmoyLightSweepFilter-0",
+            "options": {
+                "delta": 0.0
+            }
+        },
+        {
+            "name": "AmoyLightSweepFilter",
+            "frame": "AmoyLightSweepFilter-1",
+            "options": {
+                "delta": 0.01
+            }
+        },
+        {
+            "name": "AmoyLightSweepFilter",
+            "frame": "AmoyLightSweepFilter-2",
+            "options": {
+                "delta": 0.04
+            }
+        },
+        {
+            "name": "AmoyLightSweepFilter",
+            "frame": "AmoyLightSweepFilter-3",
+            "options": {
+                "delta": 0.08
+            }
+        },
+        {
+            "name": "AmoyLightSweepFilter",
+            "frame": "AmoyLightSweepFilter-4",
+            "options": {
+                "delta": 0.1
+            }
+        },
+        {
+            "name": "AmoyLightSweepFilter",
+            "frame": "AmoyLightSweepFilter-5",
+            "options": {
                 "delta": 0.14
             }
         }

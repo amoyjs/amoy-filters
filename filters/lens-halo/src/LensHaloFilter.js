@@ -3,7 +3,12 @@ import fragment from './lenshalo.frag';
 import {Filter} from '@pixi/core';
 
 /**
+ * The AmoyInnerOutlineFilter applies the effect to an object.<br>
+ * ![original](../tools/screenshots/dist/original.png)![filter](../tools/screenshots/dist/AmoyLensHaloFilter.gif)
+ *
  * @class
+ * @see {@link https://www.npmjs.com/package/@amoy/filter-lens-halo}
+ * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof AMOY.filters
  */

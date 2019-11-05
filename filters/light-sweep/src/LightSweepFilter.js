@@ -2,10 +2,16 @@ import vertex from '../../default.vert';
 import fragment from './lightsweep.frag';
 import {Filter} from '@pixi/core';
 
-/**
+/** 
+ * The AmoyLightSweepFilter applies the effect to an object.<br>
+ * ![original](../tools/screenshots/dist/original.png)![filter](../tools/screenshots/dist/AmoyLightSweepFilter.gif)
+ *
  * @class
+ * @see {@link https://www.npmjs.com/package/@amoy/light-sweep}
+ * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof AMOY.filters
+ * @param {number} [delta=0] time for shader animation
  */
 
 class AmoyLightSweepFilter extends Filter{

@@ -4,8 +4,12 @@ import {Filter} from '@pixi/core';
 
 /**
  * @class
+ * @see {@link https://www.npmjs.com/package/@amoy/page-curl}
+ * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof AMOY.filters
+ * @param {number} [intensity = 3.0] blur strength
+ * @param {number} [blursize = 2.0] blur size
  */
 
 class AmoyPixelVibrationFilter extends Filter{

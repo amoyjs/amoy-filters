@@ -30,7 +30,7 @@ void main()
 	vec3 acc=vec3(0.);
 	float dof=5.*sin(uTime*.1);
 	if(uBlizard==1){
-		for(int i=0;i<200;i++){
+		for(int i=0;i<100;i++){
 			acc+=createSnow(i,.1,.8,-1.5,dof,uv);
 		}
 	}else{
