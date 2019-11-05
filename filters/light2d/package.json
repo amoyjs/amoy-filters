@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-light2d",
-  "version": "3.0.6",
+  "version": "3.0.8",
   "main": "lib/filter-light2d.cjs.js",
   "keywords": [
     "pixi",
