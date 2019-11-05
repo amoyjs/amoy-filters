@@ -87,6 +87,10 @@
     ],
     "images" : [
         {
+            "name": "AlphaFilter",
+            "filename": "original"
+        },
+        {
             "name": "AmoyGameboyStyleFilter",
             "filename": "AmoyGameboyStyleFilter",
             "options":{
