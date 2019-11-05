@@ -10,8 +10,8 @@ import {Filter} from '@pixi/core';
 
 /**
  * @class
- * @see {@link https://www.npmjs.com/package/@amoy/weather-cloud|@amoy/weather-cloud}
- * @see {@link https://www.npmjs.com/package/@amoy/filters|@amoy/filters}
+ * @see {@link https://www.npmjs.com/package/@amoy/filter-weather-cloud}
+ * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof AMOY.filters
  * @param {number} [delta = 0] time for animation

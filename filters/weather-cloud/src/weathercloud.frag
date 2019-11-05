@@ -77,5 +77,5 @@ void main()
 	vec3 color=mix(sky,cloud,c);
 	
 	// Output to screen
-	gl_FragColor=vec4(sqrt(color),1.) ;
+	gl_FragColor=vec4(sqrt(color),1.)+texture2D(uSampler, vTextureCoord);
 }

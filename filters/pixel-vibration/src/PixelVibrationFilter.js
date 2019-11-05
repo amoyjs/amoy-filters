@@ -4,7 +4,7 @@ import {Filter} from '@pixi/core';
 
 /**
  * @class
- * @see {@link https://www.npmjs.com/package/@amoy/page-curl}
+ * @see {@link https://www.npmjs.com/package/@amoy/filter-pixel-vibration}
  * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof AMOY.filters

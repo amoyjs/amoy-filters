@@ -7,7 +7,7 @@ import {Filter} from '@pixi/core';
  * ![original](../tools/screenshots/dist/original.png)![filter](../tools/screenshots/dist/AmoyRainfallFilter.gif)
  *
  * @class
- * @see {@link https://www.npmjs.com/package/@amoy/rainfall}
+ * @see {@link https://www.npmjs.com/package/@amoy/filter-rainfall}
  * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof AMOY.filters
