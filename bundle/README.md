@@ -30,7 +30,7 @@ Filters include:
 ## Demos
 Click [here](https://amoyjs.github.io/amoy-filters/tools/demo/index.html) for filter demos.
 
-## special examples
+## Real examples
 Click [here](https://amoyjs.github.io/amoyjs-filters-examples/examples/index.html) to interactively play with filters to see how they work.
 
 

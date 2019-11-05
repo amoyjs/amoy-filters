@@ -7,7 +7,7 @@ Amoy-filters are based on pixijs filter, similar to pixi-filters library, provid
 ## Demo
 Click [here](https://amoyjs.github.io/amoy-filters/tools/demo/index.html) to interactively play with filters to see how they work.
 
-## special examples
+## Real examples
 Click [here](https://amoyjs.github.io/amoyjs-filters-examples/examples/index.html) to interactively play with filters to see how they work.
 
 
