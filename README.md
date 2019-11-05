@@ -24,8 +24,6 @@ white-black-sketch.png?v=2) |
 | **AmoyInnerOutlineFilter**<br>_@amoy/filter-inner-outline_ | ![rainfall](https://amoyjs.github.io/amoy-filters/tools/screenshots/dist/AmoyInnerOutlineFilter.png?v=2) |
 | **AmoyMosaicFilter**<br>_@amoy/filter-mosaic_ | ![rainfall](https://amoyjs.github.io/amoy-filters/tools/screenshots/dist/mosaic.png?v=2) |
 | **AmoyLightSweepFilter**<br>_@amoy/filter-light-sweep_ | ![rainfall](https://amoyjs.github.io/amoy-filters/tools/screenshots/dist/AmoyLightSweepFilter.gif?v=2) |
- **AmoyRainfallFilter**<br>_@amoy/filter-rainfall_ | ![rainfall](https://amoyjs.github.io/amoy-filters/tools/screenshots/dist/AmoyRainfallFilter.gif?v=2) |
-
 
 
 All filters work with PixiJS v5.
