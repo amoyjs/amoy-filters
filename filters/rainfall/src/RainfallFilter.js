@@ -11,7 +11,7 @@ import {Filter} from '@pixi/core';
  * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof AMOY.filters
- * @param {number} [rainR=2.0] rain numbers 
+ * @param {number} [rainR=2.0] rain numbers
  * @param {number} {delta=0} time for shader animation
  */
 

@@ -2,7 +2,7 @@ import vertex from '../../default.vert';
 import fragment from './lightsweep.frag';
 import {Filter} from '@pixi/core';
 
-/** 
+/**
  * The AmoyLightSweepFilter applies the effect to an object.<br>
  * ![original](../tools/screenshots/dist/original.png)![filter](../tools/screenshots/dist/AmoyLightSweepFilter.gif)
  *

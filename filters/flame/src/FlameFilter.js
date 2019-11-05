@@ -3,7 +3,7 @@ import fragment from './flame.frag';
 import {Filter} from '@pixi/core';
 
 /**
- * 
+ *
  *  * The AmoyFlameFilter applies the effect to an object.<br>
  * ![original](../tools/screenshots/dist/original.png)![filter](../tools/screenshots/dist/AmoyFlameFilter.gif)
  *
@@ -13,7 +13,7 @@ import {Filter} from '@pixi/core';
  * @extends PIXI.Filter
  * @memberof AMOY.filters
  * @param {number} [posx=10.0] flame center x position in pic
- * @param {number} [posy=10.0] flame center y position in pic 
+ * @param {number} [posy=10.0] flame center y position in pic
  * @param {number} [delta=0] - For animating interlaced lines
  */
 
