@@ -11,7 +11,7 @@
   "main": "lib/filter-mosaic.cjs.js",
   "bundle": "dist/filter-mosaic.js",
   "description": "PixiJS filter to apply an mosaic effect",
-  "author": "finscn <finscn@gmail.com>",
+  "author": "lilieming <lilieming@gmail.com>",
   "module": "lib/filter-mosaic.esm.js",
   "types": "types.d.ts",
   "homepage": "http://pixijs.com/",
