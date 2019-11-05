@@ -18,4 +18,5 @@ declare module "@amoy/filters" {
     export * from "@amoy/filter-water-reflection";
     export * from "@amoy/filter-weather-rainy";
     export * from "@amoy/filter-weather-cloud";
+    export * from "@amoy/filter-inner-outline";
 }

@@ -2,6 +2,7 @@ import vertex from '../../default.vert';
 import fragment from './broken_cam_distortion.frag';
 import {Filter} from '@pixi/core';
 
+
 /**
  * The CRTFilter applies a CRT effect to an object.<br>
  * ![original](../tools/screenshots/dist/original.png)![filter](../tools/screenshots/dist/broken-cam-distortion.gif)
@@ -9,6 +10,8 @@ import {Filter} from '@pixi/core';
  * @class
  * @extends PIXI.Filter
  * @memberof AMOY.filters
+ * @see {@link https://www.npmjs.com/package/@amoy/broken-cam-distortion|@amoy/broken-cam-distortion}
+ * @see {@link https://www.npmjs.com/package/@amoy/filters|@amoy/filters}
  * @param {number} [delta=0] - For animating interlaced lines
  */
 

@@ -5,6 +5,8 @@ import {Filter} from '@pixi/core';
 /**
  * @class
  * @extends PIXI.Filter
+ * @see {@link https://www.npmjs.com/package/@amoy/weather-rainy|@amoy/weather-rainy}
+ * @see {@link https://www.npmjs.com/package/@amoy/filters|@amoy/filters}
  * @memberof AMOY.filters
  */
 

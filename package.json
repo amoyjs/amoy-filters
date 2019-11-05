@@ -16,7 +16,6 @@
     "copy:demoimages": "copyfiles -f tools/demo/images/* dist/demo/images",
     "demo": "open http://localhost:8080/tools/demo/index.html && http-server . -s -c-1",
     "examples": "run-s demo",
-    "deploy": "node deploy",
     "preci": "rimraf dist/*",
     "ci": "run-s build copy:* docs",
     "docs": "jsdoc -c jsdoc.conf.json -R README.md",
@@ -31,7 +30,6 @@
     "lerna": "lerna",
     "prerelease": "run-s build",
     "release": "lerna publish",
-    "postrelease": "run-s deploy",
     "postversion": "npm run build"
   },
   "devDependencies": {

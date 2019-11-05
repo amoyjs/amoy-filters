@@ -50,7 +50,8 @@
     "@amoy/filter-water-reflection": "^3.0.6",
     "@amoy/filter-weather-cloud": "^3.0.6",
     "@amoy/filter-weather-rainy": "^3.0.6",
-    "@amoy/filter-white-black-sketch": "^3.0.6"
+    "@amoy/filter-white-black-sketch": "^3.0.6",
+    "@amoy/filter-inner-outline": "^1.0.0"
   },
   "gitHead": "6bb437322b014dce8732ecacd3602ff48414e249"
 }

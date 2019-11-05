@@ -1,0 +1,35 @@
+{
+  "name": "@amoy/filter-inner-outline",
+  "version": "1.0.0",
+  "keywords": [
+    "pixi",
+    "plugin",
+    "filters 2d",
+    "shader",
+    "webgl"
+  ],
+  "main": "lib/filter-inner-outline.cjs.js",
+  "bundle": "dist/filter-inner-outline.js",
+  "description": "PixiJS filter to apply an inner-outline effect",
+  "author": "lilieming <lilieminglook@gmail.com>",
+  "module": "lib/filter-inner-outline.esm.js",
+  "types": "types.d.ts",
+  "homepage": "https://github.com/amoyjs/amoy-filters/",
+  "bugs": "https://github.com/amoyjs/amoy-filters/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amoyjs/amoy-filters.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "types.d.ts"
+  ],
+  "dependencies": {
+    "@pixi/core": "^5.0.0-X"
+  }
+}
