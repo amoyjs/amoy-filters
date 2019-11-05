@@ -23,8 +23,7 @@ Filters include:
 * **AmoyWaterReflection** _@amoy/filter-water-reflection_
 * **AmoyWeatherRainy** _@amoy/filter-weather-rainy_
 * **AmoyWeatherCloud** _@amoy/filter-weather-cloud_
-
-* **AdjustmentFilter** _@amoy/filter-adjustment_
+* **InnerOutlineFilter** _@amoy/filter-inner-outline_
 
 
 ## Examples
