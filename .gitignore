@@ -3,7 +3,6 @@
 node_modules
 lib
 *.log
-docs
 bundle/dist
 filters/*/dist
 tools/demo/index.js
