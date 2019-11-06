@@ -15,7 +15,7 @@ import {Filter, Texture} from '@pixi/core';
  */
 
 class AmoyPageCurlFilter extends Filter{
-    constructor(posx = 0.0, posy = 0.0, startPosx = 0., startPosy = 0.0, nextPageTexture, radius=0.04) {
+    constructor(posx = 0.0, posy = 0.0, startPosx = 0., startPosy = 0.0, nextPageTexture, radius=0.04, flipMode=false) {
         super(vertex, fragment);
         // sub class
         this.posx = posx;
@@ -25,6 +25,7 @@ class AmoyPageCurlFilter extends Filter{
         this._sliceSize = 0;
         this._slicePixelSize = 0;
         this._sliceInnerSize = 0;
+        this._flipMode = flipMode;
 
         this._scaleMode = null;
 
@@ -44,10 +45,23 @@ class AmoyPageCurlFilter extends Filter{
         this.uniforms.uPosx = this.posx <= 0 ? 0.0 : this.posx;
         this.uniforms.uPosy = this.posy <= 0 ? 0.0 : this.posy;
         this.uniforms.uRadius = this.radius;
+        this.uniforms.uFlipmode = this._flipMode ? 1:0;
         this.uniforms.uStartPosx = this.startPosx <= 0 ? 0.0 : this.startPosx;
         this.uniforms.uStartPosy = this.startPosy <= 0 ? 0.0 : this.startPosy;
 
         filterManager.applyFilter(this, input, output, clear);
+    }
+
+    /**
+     * current pos x
+     */
+    get flipMode() {
+        return this.uFlipmode.uFlipMode;
+    }
+
+    set flipMode(value) {
+        this._flipMode = value;
+        this.uniforms.uFlipmode = this._flipMode ? 1:0;
     }
 
     /**
