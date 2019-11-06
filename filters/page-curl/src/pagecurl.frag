@@ -10,6 +10,7 @@ uniform float uPosy;
 uniform float uStartPosx;
 uniform float uStartPosy;
 uniform float uRadius;
+uniform int uFlipmode;
 
 
 #define pi 3.14159265359
@@ -25,6 +26,10 @@ void main(void)
 	float aspect=iResolution.x/iResolution.y;
 	
 	vec2 uv=vTextureCoord*filterArea.xy*vec2(aspect,1.)/iResolution.xy;
+	vec2 maxuv = filterArea.xy*vec2(aspect,1.)/iResolution.xy;
+	if(uFlipmode > 0){
+		uv.x = maxuv.x - uv.x;
+	}
 	
 	vec4 virtualMouse=vec4(uPosx,uPosy,uStartPosx,uStartPosy);
 	float radius = uRadius;
@@ -47,6 +52,9 @@ void main(void)
 	if(dist>radius)
 	{
 		//下一页面
+		if(uFlipmode > 0){
+			uv.x = maxuv.x- uv.x;
+		}
 		fragColor=texture(nextPageTexture,uv*vec2(1./aspect,1.));
 		fragColor.rgb*= clamp(min(1.0, .5 + 1. - uRadius/.04), 1.0, pow(clamp((dist-radius)*4.0,0.,1.),.2));
 	}
@@ -59,14 +67,20 @@ void main(void)
 		if(p2.x<=aspect&&p2.y<=1.&&p2.x>0.&&p2.y>0.){
 			uv = p2;
 			//背面页 圆柱面
-			uv = (1.0 - uv*vec2(1./aspect,1.));
-			uv.y = 1.0 - uv.y;
+			uv = (maxuv- uv*vec2(1./aspect,1.));
+			uv.y = maxuv.y- uv.y;
+			if(uFlipmode > 0){
+				uv.x = maxuv.x- uv.x;
+			}
 			fragColor = texture(nextPageTexture, uv);
 			fragColor.rgb*=clamp(min(1.0, .6 + 1. - uRadius/.04), 1.0, pow(clamp((radius-dist)/radius,0.,1.), .5));
 			fragColor.a = 1.;
 		}else{
 			//corer 圆角
 			uv = p1;
+			if(uFlipmode > 0){
+				uv.x = maxuv.x- uv.x;
+			}
 			fragColor = texture(uSampler, uv * vec2(1. / aspect, 1.));
 			fragColor.rgb*=clamp(.95, 1.0, pow(clamp((radius-dist)/radius,0.,1.),1.));
 		}
@@ -77,12 +91,18 @@ void main(void)
 		if(p.x<=aspect&&p.y<=1.&&p.x>0.&&p.y>0.&&length(mouseDir)>0.){
 			uv = p ;
 			// 背面页平面区域
-			uv = (1.0 - uv*vec2(1./aspect,1.));
-			uv.y = 1.0 - uv.y;
+			uv = (maxuv - uv*vec2(1./aspect,1.));
+			uv.y = maxuv.y - uv.y;
+			if(uFlipmode > 0){
+				uv.x = maxuv.x- uv.x;
+			}
 			fragColor=texture(nextPageTexture,uv);
 			fragColor.a = 1.;
 		}else{
 			// 正面页面
+			if(uFlipmode > 0){
+				uv.x = maxuv.x- uv.x;
+			}
 			fragColor=texture(uSampler,uv*vec2(1./aspect,1.));
 		}
 		
