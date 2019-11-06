@@ -58,7 +58,7 @@ void main(void)
 			uv.x = maxuv.x- uv.x;
 		}
 		fragColor=texture(nextPageTexture,uv*vec2(1./aspect,1.));
-		fragColor.rgb*= clamp(min(.98, .5 + 1. - radius/.04), 1.0, pow(clamp((dist-radius)*4.0,0.,1.),max(.05,5.*radius)));
+		fragColor.rgb*= clamp(min(.99, .5 + 1. - radius/.04), 1.0, pow(clamp((dist-radius)*14.0,0.,1.),max(.05,5.*radius)));
 	}
 	else if(dist>=0.)
 	{
@@ -78,7 +78,7 @@ void main(void)
 				uv.y = 1.0- uv.y;
 			}
 			fragColor = texture(nextPageTexture, uv);
-			fragColor.rgb*=clamp(min(.98, .6 + 1. - uRadius/.04), 1.0, pow(clamp((radius-dist)/radius,0.,1.), max(.05,5.*radius)));
+			fragColor.rgb*=clamp(min(.99, .6 + 1. - uRadius/.04), 1.0, pow(clamp((radius-dist)/radius,0.,1.), max(.05,5.*radius)));
 			fragColor.a = 1.;
 		}else{
 			//corer 圆角

@@ -83,7 +83,7 @@ class AmoyPageCurlFilter extends Filter{
     }
 
     set radius(value) {
-        this.uniforms.uRadius = Math.max(Math.min(value, 0.04), 0.01);
+        this.uniforms.uRadius = Math.max(Math.min(value, 0.04), 0.000001);
     }
 
 
