@@ -4,6 +4,7 @@ export default function() {
         enabled: false,
         global: false,
         opened: false,
+        fishOnly: true,
         oncreate(folder) {
             const filter = this;
             app.events.on('animate', function() {

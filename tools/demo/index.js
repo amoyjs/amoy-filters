@@ -3,7 +3,7 @@
 
   /*!
    * @amoy/filter-rainfall - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-rainfall is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -88,7 +88,7 @@
 
   /*!
    * @amoy/filter-mosaic - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-mosaic is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -157,7 +157,7 @@
 
   /*!
    * @amoy/filter-pixel-vibration - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-pixel-vibration is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -254,7 +254,7 @@
 
   /*!
    * @amoy/filter-light2d - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-light2d is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -331,7 +331,7 @@
 
   /*!
    * @amoy/filter-lens-halo - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-lens-halo is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -425,7 +425,7 @@
 
   /*!
    * @amoy/filter-broken-cam-distortion - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-broken-cam-distortion is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -491,7 +491,7 @@
 
   /*!
    * @amoy/filter-page-curl - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-page-curl is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -682,7 +682,7 @@
 
   /*!
    * @amoy/filter-sparks-drifting - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-sparks-drifting is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -791,7 +791,7 @@
 
   /*!
    * @amoy/filter-white-black-sketch - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-white-black-sketch is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -872,7 +872,7 @@
 
   /*!
    * @amoy/filter-vcr - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-vcr is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -936,7 +936,7 @@
 
   /*!
    * @amoy/filter-flame - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-flame is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -1049,7 +1049,7 @@
 
   /*!
    * @amoy/filter-gameboy-style - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-gameboy-style is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -1094,7 +1094,7 @@
 
   /*!
    * @amoy/filter-snow - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-snow is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -1175,7 +1175,7 @@
 
   /*!
    * @amoy/filter-light-sweep - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-light-sweep is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -1183,7 +1183,7 @@
 
   var vertex$c = "attribute vec2 aVertexPosition;\nattribute vec2 aTextureCoord;\n\nuniform mat3 projectionMatrix;\n\nvarying vec2 vTextureCoord;\n\nvoid main(void)\n{\n    gl_Position = vec4((projectionMatrix * vec3(aVertexPosition, 1.0)).xy, 0.0, 1.0);\n    vTextureCoord = aTextureCoord;\n}";
 
-  var fragment$c = "varying vec2 vTextureCoord;//passed from vect shader\n\nuniform sampler2D uSampler;// 2d texture\nuniform vec4 filterArea;\n\nuniform float uTime;\n\nvoid main()\n{\n\t\n\tvec2 r=vTextureCoord;\n\t\n\tfloat col=sin(r.y+r.x*3.-uTime*9.)*.9;\n\tcol*=col*col*.6;\n\t\n\tcol=clamp(col,0.,1.);\n\t\n\tvec4 tex=texture2D(uSampler,r);\n\t\n\tgl_FragColor=tex+vec4(col);\n}";
+  var fragment$c = "varying vec2 vTextureCoord;//passed from vect shader\n\nuniform sampler2D uSampler;// 2d texture\nuniform vec4 filterArea;\n\nuniform float uTime;\n\nvoid main()\n{\n\t\n\tvec2 uv=vTextureCoord;\n\tuv.x *=2.;\n\tfloat col=sin(uv.y+uv.x*3.-uTime*6.)*.9;\n\tcol*=col*col*.6;\n\n\tcol= clamp(col,0.,1.);\n\t\n\tvec4 tex=texture2D(uSampler,vTextureCoord);\n\tif(tex.a < .05){\n\t\tdiscard;\n\t}\n\tgl_FragColor=tex+vec4(col,col,col,tex.a);\n}";
 
   /**
    * The AmoyLightSweepFilter applies the effect to an object.<br>
@@ -1240,7 +1240,7 @@
 
   /*!
    * @amoy/filter-reflection - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-reflection is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -1281,7 +1281,7 @@
 
   /*!
    * @amoy/filter-water-reflection - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-water-reflection is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -1345,7 +1345,7 @@
 
   /*!
    * @amoy/filter-weather-rainy - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-weather-rainy is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -1409,7 +1409,7 @@
 
   /*!
    * @amoy/filter-weather-cloud - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-weather-cloud is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -1478,7 +1478,7 @@
 
   /*!
    * @amoy/filter-inner-outline - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filter-inner-outline is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -1562,7 +1562,7 @@
 
   /*!
    * @amoy/filters - v3.0.9
-   * Compiled Tue, 05 Nov 2019 08:44:27 UTC
+   * Compiled Wed, 06 Nov 2019 02:01:49 UTC
    *
    * @amoy/filters is licensed under the MIT License.
    * http://www.opensource.org/licenses/mit-license
@@ -2187,6 +2187,7 @@
           enabled: false,
           global: false,
           opened: false,
+          fishOnly: true,
           oncreate: function oncreate(folder) {
               var filter = this;
               app.events.on('animate', function() {
