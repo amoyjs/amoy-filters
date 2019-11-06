@@ -16,6 +16,8 @@ void main()
 	col= clamp(col,0.,1.);
 	
 	vec4 tex=texture2D(uSampler,vTextureCoord);
-	
+	if(tex.a < .005){
+		discard;
+	}
 	gl_FragColor=tex+vec4(col,col,col,tex.a);
 }
