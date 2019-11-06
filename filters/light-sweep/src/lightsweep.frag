@@ -9,15 +9,13 @@ void main()
 {
 	
 	vec2 uv=vTextureCoord;
-	uv.x *=2.;
+	uv.x *=.5;
 	float col=sin(uv.y+uv.x*3.-uTime*6.)*.9;
 	col*=col*col*.6;
 
 	col= clamp(col,0.,1.);
 	
 	vec4 tex=texture2D(uSampler,vTextureCoord);
-	if(tex.a < .05){
-		discard;
-	}
+	
 	gl_FragColor=tex+vec4(col,col,col,tex.a);
 }
