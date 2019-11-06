@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filters",
-  "version": "3.0.11",
+  "version": "3.0.12",
   "main": "lib/amoy-filters.cjs.js",
   "description": "PixiJS v5 optional display filters",
   "author": "lilieming <lilieminglook@gmail.com>",
@@ -38,7 +38,7 @@
     "@amoy/filter-gameboy-style": "^3.0.9",
     "@amoy/filter-inner-outline": "^3.0.9",
     "@amoy/filter-lens-halo": "^3.0.9",
-    "@amoy/filter-light-sweep": "^3.0.11",
+    "@amoy/filter-light-sweep": "^3.0.12",
     "@amoy/filter-light2d": "^3.0.10",
     "@amoy/filter-mosaic": "^3.0.10",
     "@amoy/filter-page-curl": "^3.0.10",
