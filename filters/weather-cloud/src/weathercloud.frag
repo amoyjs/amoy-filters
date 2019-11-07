@@ -52,7 +52,6 @@ void main()
 {
 	// Normalized pixel coordinates (from 0 to 1) and center pos
 	vec2 uv=vTextureCoord;
-	uv.y = 1.0 - uv.y;
 	uv = uv -.5;
 
 	float c=0.;
@@ -68,18 +67,16 @@ void main()
 		c+=(noise(frequency*p)/frequency);
 	}
 	
+
+	// CLOUDS SHOT WITH COLOR
+	vec3 sky=vec3(.1,.3,.9);
 	vec3 white=vec3(1.0, 1.0, 1.0);
 	vec3 pink=vec3(0.8549, 0.7569, 0.7569);
 	vec3 cloud=mix(pink,white,c);
 	c=clamp(c+y,0.,1.);
-
-	vec3 color=mix(vec3(0.),cloud,c);
-
-	float alpha = 0.0;
-	if(color.r > 0.001 || color.g > 0.001 || color.b > 0.001){
-		alpha = 1.0;
-	}
+	vec3 color=mix(sky,cloud,c);
 	
 	// Output to screen
-	gl_FragColor=vec4(sqrt(color),alpha)+texture2D(uSampler, vTextureCoord);
+	gl_FragColor=vec4(sqrt(color),1.);
+
 }
