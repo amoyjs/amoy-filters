@@ -68,13 +68,12 @@ void main()
 		c+=(noise(frequency*p)/frequency);
 	}
 	
-	// CLOUDS SHOT WITH COLOR
-	vec3 sky=vec3(.1,.3,.9);
 	vec3 white=vec3(1.0, 1.0, 1.0);
 	vec3 pink=vec3(0.8549, 0.7569, 0.7569);
 	vec3 cloud=mix(pink,white,c);
 	c=clamp(c+y,0.,1.);
-	vec3 color=mix(sky,cloud,c);
+
+	vec3 color=mix(vec3(0.),cloud,c);
 	
 	// Output to screen
 	gl_FragColor=vec4(sqrt(color),1.)+texture2D(uSampler, vTextureCoord);
