@@ -74,7 +74,12 @@ void main()
 	c=clamp(c+y,0.,1.);
 
 	vec3 color=mix(vec3(0.),cloud,c);
+
+	float alpha = 0.0;
+	if(color.r > 0.001 || color.g > 0.001 || color.b > 0.001){
+		alpha = 1.0;
+	}
 	
 	// Output to screen
-	gl_FragColor=vec4(sqrt(color),1.)+texture2D(uSampler, vTextureCoord);
+	gl_FragColor=vec4(sqrt(color),alpha)+texture2D(uSampler, vTextureCoord);
 }
