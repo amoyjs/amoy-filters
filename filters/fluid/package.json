@@ -1,0 +1,36 @@
+{
+  "name": "@amoy/filter-fluid",
+  "version": "1.0.0",
+  "keywords": [
+    "pixi",
+    "plugin",
+    "filters 2d",
+    "shader",
+    "webgl"
+  ],
+  "main": "lib/filter-fluid.cjs.js",
+  "bundle": "dist/filter-fluid.js",
+  "description": "PixiJS filter to apply an fluid effect",
+  "author": "lilieming <lilieming@gmail.com>",
+  "module": "lib/filter-fluid.esm.js",
+  "types": "types.d.ts",
+  "homepage": "http://pixijs.com/",
+  "bugs": "https://github.com/pixijs/pixi-filters/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixijs/pixi-filters.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "types.d.ts"
+  ],
+  "dependencies": {
+    "@pixi/core": "^5.0.0-X"
+  },
+  "gitHead": "6bb437322b014dce8732ecacd3602ff48414e249"
+}
