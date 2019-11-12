@@ -1,6 +1,7 @@
 /// <reference types="pixi.js" />
 declare module "@amoy/filter-fluid" {
-    export class FluidFilter extends PIXI.Filter {
-        constructor();
+    export class AmoyFluidFilter extends PIXI.Filter {
+        constructor(strength?:number);
+        strength:number;
     }
 }

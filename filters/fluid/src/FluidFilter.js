@@ -1,6 +1,6 @@
-import vertex from '../../default.vert';
-import {Filter} from '@pixi/core';
 
+import {Filter} from '@pixi/core';
+import { settings } from '@pixi/settings';
 /**
  * The NTFluidFilter applies a Fluid effect to an object.<br>
  * @class
@@ -8,47 +8,60 @@ import {Filter} from '@pixi/core';
  * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof PIXI.filters
- * @param {number} [tileSize=32] - The maximum size of the tilesize is 64
+ * @param {number} [strength=15] - The maximum size of the tilesize is 64
  */
 class AmoyFluidFilter extends Filter {
 
     constructor(strength) {
-        super(vertex);
-        this.blurFilter = new PIXI.filters.BlurFilter(strength || 15);
-        this.colFilter = new PIXI.filters.ColorMatrixFilter();
-        this.colFilter.matrix = [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 80, -12];
+        super();
+        this._blurFilter = new PIXI.filters.BlurFilter(strength || 15);
+        this._colFilter = new PIXI.filters.ColorMatrixFilter();
+        this._colFilter.matrix = [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 100, -12];
+        this.resolution = settings.RESOLUTION;
 
+        this.padding = Math.abs(this._blurFilter.blur) * 2;
     }
 
     /**
      * Override existing apply method in PIXI.Filter
      * @private
      */
-    apply(filterManager, input, output, clear) {
-        const renderTarget = filterManager.getFilterTexture();
+    apply(filterManager, input, output) {
+        let renderTarget = filterManager.getFilterTexture();
 
-        this.blurFilter.apply(filterManager, input, renderTarget, true);
-        this.colFilter.apply(filterManager, renderTarget, output, clear);
+        let renderTarget1 = filterManager.getFilterTexture(input);
 
+        this._blurFilter.apply(filterManager, input, renderTarget, true);
+
+        this._colFilter.apply(filterManager, renderTarget, renderTarget1, true);
+
+        filterManager.applyFilter(this, renderTarget1, output, false);
+
+        filterManager.returnFilterTexture(renderTarget1);
         filterManager.returnFilterTexture(renderTarget);
     }
 
     /**
-     * Fluid tile size
+     * The resolution of the filter.
      *
      * @member {number}
-     * @default 32.0
      */
-    get tileSize() {
-        return this.uniforms.uTileSize;
+    get resolution() {
+        return this._resolution;
+    }
+    set resolution(value) {
+        this._resolution = value;
+
+        if (this._colFilter) {
+            this._colFilter.resolution = value;
+        }
+        if (this._blurFilter) {
+            this._blurFilter.resolution = value;
+        }
     }
 
-    set tileSize(value) {
-        if (value < 0.0 || value > 64.0) {
-            value = 32.0;
-        }
-        this.uniforms.uTileSize = value;
-    }
 }
+
+
 
 export { AmoyFluidFilter };
