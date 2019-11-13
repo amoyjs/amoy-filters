@@ -213,9 +213,10 @@ void main(){
 		vec2 sparkModulus=mod(sparkCoord+sparkOffset,sparkGridSize)-.5*vec2(sparkGridSize);
 		float sparkLength=length(sparkModulus);
 		float sparksGray=max(0.,1.-sparkLength/(sparkSize*sparkGridSize));
-		sparks=sparkLife*sparksGray*vec3(0.9686, 0.0, 0.0);
+		sparks=sparkLife*sparksGray*vec3(0.9333, 0.498, 0.1412);
 	}
 	//
 	vec4 effect = vec4(max(fire,sparks)+smoke,1.);
+	effect.a = effect.r;
 	gl_FragColor = effect + texture2D(uSampler, vTextureCoord);
 }

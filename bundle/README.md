@@ -25,7 +25,7 @@ Filters include:
 * **AmoyWeatherRainy** _@amoy/filter-weather-rainy_
 * **AmoyWeatherCloud** _@amoy/filter-weather-cloud_
 * **AmoyInnerOutlineFilter** _@amoy/filter-inner-outline_
-
+* **AmoyFluidFilter** _@amoy/filter-Fluid_
 
 ## Demos
 Click [here](https://amoyjs.github.io/amoy-filters/tools/demo/index.html) for filter demos.
