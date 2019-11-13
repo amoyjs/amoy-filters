@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filters",
-  "version": "3.0.18",
+  "version": "3.0.19",
   "main": "lib/amoy-filters.cjs.js",
   "description": "PixiJS v5 optional display filters",
   "author": "lilieming <lilieminglook@gmail.com>",
@@ -47,7 +47,7 @@
     "@amoy/filter-rainfall": "^3.0.17",
     "@amoy/filter-reflection": "^3.0.17",
     "@amoy/filter-snow": "^3.0.17",
-    "@amoy/filter-sparks-drifting": "^3.0.17",
+    "@amoy/filter-sparks-drifting": "^3.0.19",
     "@amoy/filter-vcr": "^3.0.17",
     "@amoy/filter-water-reflection": "^3.0.17",
     "@amoy/filter-weather-cloud": "^3.0.17",
