@@ -2,16 +2,15 @@ varying vec2 vTextureCoord;//passed from vect shader
 
 uniform sampler2D uSampler;// 2d texture
 uniform vec4 filterArea;
-
+uniform float boundary;
 uniform float uTime;
 
 void main()
 {
     vec2 uv=vTextureCoord;
-    uv.y = 1.- vTextureCoord.y;
     vec4 waterColor=vec4(1.);
-    float reflactionY=.3;
-    if(uv.y<=reflactionY)
+    float reflactionY=boundary;
+    if(uv.y>reflactionY)
     {
         float oy=uv.y;
         uv.y=2.*reflactionY-uv.y;

@@ -12,10 +12,11 @@ import {Filter} from '@pixi/core';
  */
 
 class AmoyWaterReflectionFilter extends Filter{
-    constructor(delta = 0.0) {
+    constructor(delta = 0.0, boundary = .5) {
         super(vertex, fragment);
         // sub class
         this.delta = delta;
+        this.boundary = boundary;
     }
 
     /**
@@ -40,6 +41,21 @@ class AmoyWaterReflectionFilter extends Filter{
     set delta(value) {
         this.uniforms.uTime = value;
     }
+
+    /**
+     * Vertical position of the reflection point, default is 50% (middle)
+     * smaller numbers produce a larger reflection, larger numbers produce a smaller reflection.
+     *
+     * @member {number}
+     * @default 0.5
+     */
+    set boundary(value) {
+        this.uniforms.boundary = value;
+    }
+    get boundary() {
+        return this.uniforms.boundary;
+    }
+
 }
 
 export { AmoyWaterReflectionFilter };

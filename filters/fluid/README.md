@@ -11,7 +11,7 @@ npm install @amoy/filter-fluid
 ## Usage
 
 ```js
-import {FluidFilter} from '@amoy/filter-fluid';
+import {AmoyFluidFilter} from '@amoy/filter-fluid';
 import {Container} from 'pixi.js';
 
 const container = new Container();
