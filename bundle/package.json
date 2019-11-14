@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filters",
-  "version": "3.0.21",
+  "version": "3.0.22",
   "main": "lib/amoy-filters.cjs.js",
   "description": "PixiJS v5 optional display filters",
   "author": "lilieming <lilieminglook@gmail.com>",
@@ -33,7 +33,7 @@
     "types.d.ts"
   ],
   "dependencies": {
-    "@amoy/filter-blood-splash": "^3.0.21",
+    "@amoy/filter-blood-splash": "^3.0.22",
     "@amoy/filter-broken-cam-distortion": "^3.0.21",
     "@amoy/filter-flame": "^3.0.21",
     "@amoy/filter-fluid": "^3.0.21",
