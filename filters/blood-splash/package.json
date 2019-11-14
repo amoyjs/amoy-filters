@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-blood-splash",
-  "version": "1.0.0",
+  "version": "3.0.21",
   "main": "lib/filter-blood-splash.cjs.js",
   "keywords": [
     "pixi",
