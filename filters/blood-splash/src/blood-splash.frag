@@ -63,6 +63,6 @@ void main( )
 
     col = smoothstep(.6, .9, col);
 
-    
-    gl_FragColor = vec4(col, col.r<=0.?0.:1.0) + texture2D(uSampler, vTextureCoord);
+    vec4 tc = texture2D(uSampler, vTextureCoord);
+    gl_FragColor = vec4(col, col.r)*col.r + tc*(1.0 -col.r);
 }
