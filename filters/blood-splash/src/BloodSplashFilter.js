@@ -1,26 +1,27 @@
 import vertex from '../../default.vert';
-import fragment from './inneroutline.frag';
-import {Filter} from '@pixi/core';
+import fragment from './blood-splash.frag';
+import { Filter } from '@pixi/core';
 
 /**
- * The AmoyInnerOutlineFilter applies the effect to an object.<br>
- * ![original](../tools/screenshots/dist/original.png)![filter](../tools/screenshots/dist/AmoyInnerOutlineFilter.gif)
- *
  * @class
- * @see {@link https://www.npmjs.com/package/@amoy/filter-gameboy-style}
+ * @see {@link https://www.npmjs.com/package/@amoy/filter-light2d}
  * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof AMOY.filters
- * @param {Object} [color={r:1.0, g:0, b:0}] outline color
- * @param {number} [delta=0.0] time for shader animation
+ * @param {number} [posx=10.0] light  x position
+ * @param {number} [posy=10.0] light  y position
  */
 
-class AmoyInnerOutlineFilter extends Filter{
-    constructor(color={r:1.0, g:0, b:0}, delta = 0.0) {
+class AmoyBloodSplashFilter extends Filter {
+    constructor(posx = 10.0, posy = 10.0, delta=0., color={r:1.0, g:0, b:0}) {
         super(vertex, fragment);
+        // sub class
+        this.posx = posx;
+        this.posy = posy;
+        this.delta = delta;
         this.uniforms.uColor  = new Float32Array(3);
         this._color = {r:color.r, g:color.g, b:color.b};
-        this.delta = delta;
+
     }
 
     /**
@@ -28,13 +29,24 @@ class AmoyInnerOutlineFilter extends Filter{
      * @private
      */
     apply(filterManager, input, output, clear) {
+        this.uniforms.uPosx = this.posx <= 0 ? 10.0 : this.posx;
+        this.uniforms.uPosy = this.posy <= 0 ? 10.0 : this.posy;
         this.uniforms.uColor[0] = this._color.r;
         this.uniforms.uColor[1] = this._color.g;
         this.uniforms.uColor[2] = this._color.b;
-        this.uniforms.uTime = this.delta <= 0 ? 2.0 : this.delta;
         filterManager.applyFilter(this, input, output, clear);
     }
 
+    /**
+     * filter area point x
+     */
+    get posx() {
+        return this.uniforms.uPosx;
+    }
+
+    set posx(value) {
+        this.uniforms.uPosx = value;
+    }
 
     get color(){
         return this._color;
@@ -60,6 +72,7 @@ class AmoyInnerOutlineFilter extends Filter{
     set delta(value) {
         this.uniforms.uTime = value;
     }
+
 }
 
-export { AmoyInnerOutlineFilter };
+export { AmoyBloodSplashFilter };
