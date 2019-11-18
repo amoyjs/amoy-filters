@@ -21,3 +21,4 @@ export * from "@amoy/filter-weather-cloud";
 export * from "@amoy/filter-inner-outline";
 export * from "@amoy/filter-fluid";
 export * from "@amoy/filter-blood-splash";
+export * from "@amoy/filter-magnify";
