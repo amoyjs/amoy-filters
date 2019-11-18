@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-magnify",
-  "version": "3.0.21",
+  "version": "3.0.23",
   "main": "lib/filter-magnify.cjs.js",
   "keywords": [
     "pixi",
