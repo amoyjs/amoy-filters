@@ -9,7 +9,7 @@ export default function() {
             const domElement = document.querySelector("#container");
             let initWidth = domElement.offsetWidth;
             let initHeight = domElement.offsetHeight;
-            this.uniforms.uMagnification =  1.2;
+            this.uniforms.uMagnification =  1.5;
             this.uniforms.uLensRadius =  90.;
             
             folder.add(this, 'posx', 100, initWidth);
