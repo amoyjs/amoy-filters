@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-barrel-distortion",
-  "version": "1.0.0",
+  "version": "3.0.24",
   "main": "lib/filter-barrel-distortion.cjs.js",
   "keywords": [
     "pixi",

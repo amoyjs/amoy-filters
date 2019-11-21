@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-fisheye",
-  "version": "1.0.0",
+  "version": "3.0.24",
   "main": "lib/filter-fisheye.cjs.js",
   "keywords": [
     "pixi",

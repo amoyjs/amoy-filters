@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-vcr",
-  "version": "3.0.21",
+  "version": "3.0.24",
   "main": "lib/filter-vcr.cjs.js",
   "bundle": "dist/filter-vcr.js",
   "description": "PixiJS filter to apply an vcr effect",

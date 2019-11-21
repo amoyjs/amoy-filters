@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-weather-cloud",
-  "version": "3.0.21",
+  "version": "3.0.24",
   "main": "lib/filter-weather-cloud.cjs.js",
   "bundle": "dist/filter-weather-cloud.js",
   "description": "PixiJS filter to apply an weather-cloud effect",
