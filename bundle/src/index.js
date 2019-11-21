@@ -23,3 +23,4 @@ export * from "@amoy/filter-fluid";
 export * from "@amoy/filter-blood-splash";
 export * from "@amoy/filter-magnify";
 export * from "@amoy/filter-fisheye";
+export * from "@amoy/filter-barrel-distortion";

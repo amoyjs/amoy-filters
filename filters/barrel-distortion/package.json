@@ -1,0 +1,36 @@
+{
+  "name": "@amoy/filter-barrel-distortion",
+  "version": "1.0.0",
+  "main": "lib/filter-barrel-distortion.cjs.js",
+  "keywords": [
+    "pixi",
+    "plugin",
+    "filters 2d",
+    "shader",
+    "webgl"
+  ],
+  "bundle": "dist/filter-barrel-distortion.js",
+  "description": "PixiJS filter to apply an barrel-distortion effect",
+  "author": "lilieming <lilieminglook@gmail.com>",
+  "module": "lib/filter-barrel-distortion.esm.js",
+  "types": "types.d.ts",
+  "homepage": "https://github.com/amoyjs/amoy-filters/",
+  "bugs": "https://github.com/amoyjs/amoy-filters/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amoyjs/amoy-filters.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "types.d.ts"
+  ],
+  "dependencies": {
+    "@pixi/core": "^5.0.0-X"
+  },
+  "gitHead": "6bb437322b014dce8732ecacd3602ff48414e249"
+}
