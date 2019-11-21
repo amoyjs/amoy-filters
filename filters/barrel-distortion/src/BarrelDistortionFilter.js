@@ -25,7 +25,7 @@ class AmoyBarrelDistortionFilter extends Filter {
         filterManager.applyFilter(this, input, output, clear);
     }
 
-        /**
+    /**
      * filter area point x
      */
     get barrelPower() {
