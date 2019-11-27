@@ -8,7 +8,7 @@ import { settings } from '@pixi/settings';
  * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof PIXI.filters
- * @param {number} [strength=15] - The maximum size of the tilesize is 64
+ * @param {number} [strength=15] - the strength of blur
  */
 class AmoyFluidFilter extends Filter {
 
@@ -16,6 +16,8 @@ class AmoyFluidFilter extends Filter {
         super();
         this._blurFilter = new PIXI.filters.BlurFilter(strength || 15);
         this._colFilter = new PIXI.filters.ColorMatrixFilter();
+
+        //use this matrix to change alpha value
         this._colFilter.matrix = [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 100, -12];
         this.resolution = settings.RESOLUTION;
 
@@ -28,11 +30,9 @@ class AmoyFluidFilter extends Filter {
      */
     apply(filterManager, input, output) {
         let renderTarget = filterManager.getFilterTexture();
-
         let renderTarget1 = filterManager.getFilterTexture(input);
 
         this._blurFilter.apply(filterManager, input, renderTarget, true);
-
         this._colFilter.apply(filterManager, renderTarget, renderTarget1, true);
 
         filterManager.applyFilter(this, renderTarget1, output, false);
@@ -49,6 +49,7 @@ class AmoyFluidFilter extends Filter {
     get resolution() {
         return this._resolution;
     }
+
     set resolution(value) {
         this._resolution = value;
 

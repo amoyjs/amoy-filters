@@ -26,7 +26,8 @@ class AmoyBarrelDistortionFilter extends Filter {
     }
 
     /**
-     * filter area point x
+     * barrelPower , the strength of distortion
+     * @member {number}
      */
     get barrelPower() {
         return this.uniforms.uBarrelPower;

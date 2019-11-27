@@ -65,7 +65,8 @@ vec4 image()
             circles += 0.5 * normalize(v) * ((p2 - p1) / (2. * h) * (1. - t) * (1. - t));
         }
     }
-    circles /= float((MAX_RADIUS*2+1)*(MAX_RADIUS*2+1));
+    int r = (MAX_RADIUS*2+1);
+    circles /= float(r*r);
 
     float intensity = mix(0.01, 0.15, smoothstep(0.1, 0.6, abs(fract(0.05*uTime + 0.5)*2.-1.)));
     vec3 n = vec3(circles, sqrt(1. - dot(circles, circles)));

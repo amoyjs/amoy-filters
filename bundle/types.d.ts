@@ -24,4 +24,5 @@ declare module "@amoy/filters" {
     export * from "@amoy/filter-magnify";
     export * from "@amoy/filter-fisheye";
     export * from "@amoy/filter-barrel-distortion";
+    export * from "@amoy/filter-clear-background";
 }

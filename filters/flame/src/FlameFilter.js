@@ -14,6 +14,7 @@ import {Filter} from '@pixi/core';
  * @memberof AMOY.filters
  * @param {number} [posx=10.0] flame center x position in pic
  * @param {number} [posy=10.0] flame center y position in pic
+ * @param {number} [strength=2.0] strength of flame
  * @param {number} [delta=0] - For animating interlaced lines
  */
 
@@ -62,7 +63,7 @@ class AmoyFlameFilter extends Filter{
     }
 
     /**
-     * fire strength
+     * flame strength
      */
     get strength() {
         return this.uniforms.uStrength;

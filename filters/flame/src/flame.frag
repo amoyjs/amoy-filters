@@ -50,8 +50,7 @@ float fbm(vec2 uv)
 
 void main()
 {
-	vec2 fragCoord=vTextureCoord*filterArea.xy;
-	vec2 uv=fragCoord.xy/filterArea.xy;
+	vec2 uv=vTextureCoord;
 	vec2 q=uv;
 	q.y = 1.0 - q.y;
 	float strength=uStrength;
