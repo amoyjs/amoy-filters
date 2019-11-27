@@ -4,7 +4,7 @@ uniform vec4 filterArea;
 uniform sampler2D uSampler;// 2d texture
 
 uniform vec3 uColor;
-float vec3 uOffset;
+float uOffset;
 
 void main( )
 {

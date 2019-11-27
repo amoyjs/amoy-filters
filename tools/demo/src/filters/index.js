@@ -1,6 +1,7 @@
 import { format } from 'path';
 
 // Order here is the dat-gui order
+export {default as clear_background} from './clear-background'
 export {default as rainfall} from './rainfall';
 export {default as mosaic} from './mosaic';
 export {default as pixelVibration} from './pixel-vibration';
@@ -19,10 +20,9 @@ export {default as reflection} from './reflection'
 export {default as water_reflection} from './water-reflection'
 export {default as weather_rainy} from './weather-rainy'
 export {default as weather_cloud} from './weather-cloud'
-// export {default as inner_outline} from './inner-outline'
-// export {default as fluid} from './fluid'
-// export {default as blood_splash} from './blood-splash'
-// export {default as magnify} from './magnify'
-// export {default as fisheye} from './fisheye'
+export {default as inner_outline} from './inner-outline'
+export {default as fluid} from './fluid'
+export {default as blood_splash} from './blood-splash'
+export {default as magnify} from './magnify'
+export {default as fisheye} from './fisheye'
 export {default as barrel_distortion} from './barrel-distortion'
-export {default as clear_background} from './clear-background'
