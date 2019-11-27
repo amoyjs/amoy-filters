@@ -13,9 +13,11 @@ import { Filter } from '@pixi/core';
  */
 
 class AmoyClearBackgroundFilter extends Filter {
-    constructor(color={r:1.0, g:0, b:0}) {
+    constructor(color={r:1.0, g:0, b:0}, offset=0.15) {
         super(vertex, fragment);
         // sub class
+        this.uniforms.uColor  = new Float32Array(3);
+        this.offset = offset;
         this._color = {r:color.r, g:color.g, b:color.b};
     }
 
@@ -27,6 +29,7 @@ class AmoyClearBackgroundFilter extends Filter {
         this.uniforms.uColor[0] = this._color.r;
         this.uniforms.uColor[1] = this._color.g;
         this.uniforms.uColor[2] = this._color.b;
+        this.uniforms.uOffset = this.offset;
         filterManager.applyFilter(this, input, output, clear);
     }
 
@@ -43,6 +46,14 @@ class AmoyClearBackgroundFilter extends Filter {
         this.uniforms.uColor[0] = value.r;
         this.uniforms.uColor[1] = value.g;
         this.uniforms.uColor[2] = value.b;
+    }
+
+    get offset(){
+        return this.uniforms.uOffset;
+    }
+
+    set offset(value) {
+        return this.uniforms.uOffset = value;
     }
 }
 

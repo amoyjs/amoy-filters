@@ -7,8 +7,6 @@ export default function() {
         fishOnly:true,
         oncreate(folder) {
             const filter = this;
-            filter.posx = 50;
-            filter.posy = 50;
             var palette = {
                 _color :[filter.color.r, filter.color.g, filter.color.b],
                 set color(data){

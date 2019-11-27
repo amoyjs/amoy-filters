@@ -4,14 +4,15 @@ uniform vec4 filterArea;
 uniform sampler2D uSampler;// 2d texture
 
 uniform vec3 uColor;
+float vec3 uOffset;
 
 void main( )
 {
     vec2 uv = vTextureCoord;
     vec4 c = texture2D(uSampler, vTextureCoord);
     float a = 0.;
-    if(c.r-uSampler.r > 0.001 || c.g-uSampler.g > 0.001 || c.b-uSampler.b > 0.001){
-        a = c.a;
+    if(abs(c.r-uColor.r) > uOffset || abs(c.g-uColor.g) > uOffset || abs(c.b-uColor.b) > uOffset){
+        a = 1.0;
     }
 
     c.a = a;
