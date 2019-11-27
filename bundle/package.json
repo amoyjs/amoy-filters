@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filters",
-  "version": "3.0.27",
+  "version": "3.0.28",
   "main": "lib/amoy-filters.cjs.js",
   "description": "PixiJS v5 optional display filters",
   "author": "lilieming <lilieminglook@gmail.com>",
@@ -36,7 +36,7 @@
     "@amoy/filter-barrel-distortion": "^3.0.25",
     "@amoy/filter-blood-splash": "^3.0.25",
     "@amoy/filter-broken-cam-distortion": "^3.0.24",
-    "@amoy/filter-clear-background": "^3.0.27",
+    "@amoy/filter-clear-background": "^3.0.28",
     "@amoy/filter-fisheye": "^3.0.24",
     "@amoy/filter-flame": "^3.0.25",
     "@amoy/filter-fluid": "^3.0.25",
