@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filters",
-  "version": "3.0.24",
+  "version": "3.0.25",
   "main": "lib/amoy-filters.cjs.js",
   "description": "PixiJS v5 optional display filters",
   "author": "lilieming <lilieminglook@gmail.com>",
@@ -33,12 +33,13 @@
     "types.d.ts"
   ],
   "dependencies": {
-    "@amoy/filter-barrel-distortion": "^3.0.24",
-    "@amoy/filter-blood-splash": "^3.0.24",
+    "@amoy/filter-barrel-distortion": "^3.0.25",
+    "@amoy/filter-blood-splash": "^3.0.25",
     "@amoy/filter-broken-cam-distortion": "^3.0.24",
+    "@amoy/filter-clear-background": "^3.0.25",
     "@amoy/filter-fisheye": "^3.0.24",
-    "@amoy/filter-flame": "^3.0.24",
-    "@amoy/filter-fluid": "^3.0.24",
+    "@amoy/filter-flame": "^3.0.25",
+    "@amoy/filter-fluid": "^3.0.25",
     "@amoy/filter-gameboy-style": "^3.0.24",
     "@amoy/filter-inner-outline": "^3.0.24",
     "@amoy/filter-lens-halo": "^3.0.24",
@@ -48,7 +49,7 @@
     "@amoy/filter-mosaic": "^3.0.24",
     "@amoy/filter-page-curl": "^3.0.24",
     "@amoy/filter-pixel-vibration": "^3.0.24",
-    "@amoy/filter-rainfall": "^3.0.24",
+    "@amoy/filter-rainfall": "^3.0.25",
     "@amoy/filter-reflection": "^3.0.24",
     "@amoy/filter-snow": "^3.0.24",
     "@amoy/filter-sparks-drifting": "^3.0.24",
@@ -56,8 +57,7 @@
     "@amoy/filter-water-reflection": "^3.0.24",
     "@amoy/filter-weather-cloud": "^3.0.24",
     "@amoy/filter-weather-rainy": "^3.0.24",
-    "@amoy/filter-white-black-sketch": "^3.0.24",
-    "@amoy/filter-clear-background": "^3.0.24"
+    "@amoy/filter-white-black-sketch": "^3.0.24"
   },
   "gitHead": "6bb437322b014dce8732ecacd3602ff48414e249"
 }
