@@ -53,7 +53,7 @@ class AmoyClearBackgroundFilter extends Filter {
     }
 
     set offset(value) {
-        return this.uniforms.uOffset = value;
+        this.uniforms.uOffset = value;
     }
 }
 
