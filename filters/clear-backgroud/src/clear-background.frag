@@ -15,6 +15,6 @@ void main( )
         a = 1.0;
     }
 
-    c.a = a;
+    c *= a;
     gl_FragColor = c;
 }
