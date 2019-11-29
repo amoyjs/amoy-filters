@@ -27,6 +27,7 @@ Filters include:
 * **AmoyInnerOutlineFilter** _@amoy/filter-inner-outline_
 * **AmoyFluidFilter** _@amoy/filter-fluid_
 * **AmoyFluidFilter** _@amoy/filter-magnify_
+* **AmoyFluidFilter** _@amoy/filter-clear-background_
 
 ## Demos
 Click [here](https://amoyjs.github.io/amoy-filters/tools/demo/index.html) for filter demos.

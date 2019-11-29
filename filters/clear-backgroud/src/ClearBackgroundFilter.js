@@ -8,12 +8,12 @@ import { Filter } from '@pixi/core';
  * @see {@link https://www.npmjs.com/package/@amoy/filters}
  * @extends PIXI.Filter
  * @memberof AMOY.filters
- * @param {number} [posx=10.0] light  x position
- * @param {number} [posy=10.0] light  y position
+ * @param {object} [{r:1.0, g:0, b:0}] default color for clear
+ * @param {number} [offset=5.0] the color offset range [0, 20]
  */
 
 class AmoyClearBackgroundFilter extends Filter {
-    constructor(color={r:1.0, g:0, b:0}, offset=0.15) {
+    constructor(color={r:1.0, g:0, b:0}, offset=5.) {
         super(vertex, fragment);
         // sub class
         this.uniforms.uColor  = new Float32Array(3);
