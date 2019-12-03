@@ -11,7 +11,7 @@ import { Filter } from '@pixi/core';
  */
 
 class AmoyVignetteFilter extends Filter {
-    constructor(posx = 10.0, posy = 10.0) {
+    constructor() {
         super(vertex, fragment);
         // sub class
     }

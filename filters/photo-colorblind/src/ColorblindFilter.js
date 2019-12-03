@@ -3,7 +3,7 @@ import fragment from './colorblind.frag';
 import { Filter } from '@pixi/core';
 
 
-var AMOY_CLORBLINDE_TYPE_ENUM = {
+let AMOY_CLORBLINDE_TYPE_ENUM = {
     Protanopia:1,
     Protanomaly:2,
     Deuteranopia:3,
@@ -12,7 +12,7 @@ var AMOY_CLORBLINDE_TYPE_ENUM = {
     Tritanomaly:6,
     Achromatopsia:7,
     Achromatomaly:8
-}
+};
 
 /**
  * @class
