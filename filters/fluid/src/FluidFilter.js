@@ -28,8 +28,7 @@ class AmoyFluidFilter extends Filter {
      * Override existing apply method in PIXI.Filter
      * @private
      */
-    apply(filterManager, input, output, clear)
-    {
+    apply(filterManager, input, output, clear) {
         let renderTarget = filterManager.getFilterTexture();
         let renderTarget1 = filterManager.getFilterTexture();
 
