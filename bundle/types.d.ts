@@ -1,3 +1,4 @@
+import { format } from "path";
 
 declare module "@amoy/filters" {
     export * from "@amoy/filter-rainfall";
@@ -25,4 +26,9 @@ declare module "@amoy/filters" {
     export * from "@amoy/filter-fisheye";
     export * from "@amoy/filter-barrel-distortion";
     export * from "@amoy/filter-clear-background";
+    export * from "@amoy/filter-pencil-draw";
+    export * from "@amoy/filter-photo-sepia-toning";
+    export * from "@amoy/filter-warhol";
+    export * from "@amoy/filter-vignette";
+    export * from "@amoy/filter-colorblind";
 }

@@ -18,9 +18,6 @@ void main(){
 	float intensity=(color.r+color.g+color.b)/3.;
 	int index=int(intensity*4.);
 
-	int r = index+0;
-	int g = index+1;
-	int b = index+2;
 	if(index == 0){
 		gl_FragColor=vec4(vec3(15./255., 56./255., 15./255.),1.);
 	}else if(index == 1){

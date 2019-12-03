@@ -10,7 +10,7 @@
     "watch": "rollup -cwm"
   },
   "devDependencies": {
-    "@amoy/filters": "^3.0.27",
+    "@amoy/filters": "file:../../bundle",
     "cross-env": "^5.2.0",
     "rimraf": "^2.6.3",
     "rollup": "^1.11.3",
@@ -23,7 +23,6 @@
     "rollup-watch": "^4.3.1"
   },
   "dependencies": {
-    "@amoy/filters": "^3.0.28",
     "pixi.js": "^5.0.0-X"
   }
 }

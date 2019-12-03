@@ -20,22 +20,21 @@ class AmoyFluidFilter extends Filter {
         //use this matrix to change alpha value
         this._colFilter.matrix = [1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 100, -12];
         this.resolution = settings.RESOLUTION;
-
-        this.padding = Math.abs(this._blurFilter.blur) * 2;
     }
 
     /**
      * Override existing apply method in PIXI.Filter
      * @private
      */
-    apply(filterManager, input, output) {
+    apply(filterManager, input, output, clear)
+    {
         let renderTarget = filterManager.getFilterTexture();
-        let renderTarget1 = filterManager.getFilterTexture(input);
+        let renderTarget1 = filterManager.getFilterTexture();
 
         this._blurFilter.apply(filterManager, input, renderTarget, true);
         this._colFilter.apply(filterManager, renderTarget, renderTarget1, true);
 
-        filterManager.applyFilter(this, renderTarget1, output, false);
+        filterManager.applyFilter(this, renderTarget1, output, clear);
 
         filterManager.returnFilterTexture(renderTarget1);
         filterManager.returnFilterTexture(renderTarget);

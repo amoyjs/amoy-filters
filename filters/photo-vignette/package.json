@@ -1,0 +1,36 @@
+{
+  "name": "@amoy/filter-vignette",
+  "version": "3.0.24",
+  "main": "lib/filter-vignette.cjs.js",
+  "keywords": [
+    "pixi",
+    "plugin",
+    "filters 2d",
+    "shader",
+    "webgl"
+  ],
+  "bundle": "dist/filter-vignette.js",
+  "description": "PixiJS filter to apply an vignette effect",
+  "author": "lilieming <lilieminglook@gmail.com>",
+  "module": "lib/filter-vignette.esm.js",
+  "types": "types.d.ts",
+  "homepage": "https://github.com/amoyjs/amoy-filters/",
+  "bugs": "https://github.com/amoyjs/amoy-filters/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amoyjs/amoy-filters.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "types.d.ts"
+  ],
+  "dependencies": {
+    "@pixi/core": "^5.0.0-X"
+  },
+  "gitHead": "6bb437322b014dce8732ecacd3602ff48414e249"
+}

@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filters",
-  "version": "3.0.28",
+  "version": "3.0.29",
   "main": "lib/amoy-filters.cjs.js",
   "description": "PixiJS v5 optional display filters",
   "author": "lilieming <lilieminglook@gmail.com>",
@@ -57,7 +57,12 @@
     "@amoy/filter-water-reflection": "^3.0.24",
     "@amoy/filter-weather-cloud": "^3.0.24",
     "@amoy/filter-weather-rainy": "^3.0.24",
-    "@amoy/filter-white-black-sketch": "^3.0.24"
+    "@amoy/filter-white-black-sketch": "^3.0.24",
+    "@amoy/filter-pencil-draw": "^3.0.24",
+    "@amoy/filter-photo-sepia-toning": "^3.0.24",
+    "@amoy/filter-warhol": "^3.0.24",
+    "@amoy/filter-vignette": "^3.0.24",
+    "@amoy/filter-colorblind": "^3.0.24"
   },
   "gitHead": "6bb437322b014dce8732ecacd3602ff48414e249"
 }
