@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-warhol",
-  "version": "3.0.24",
+  "version": "3.0.29",
   "main": "lib/filter-warhol.cjs.js",
   "keywords": [
     "pixi",

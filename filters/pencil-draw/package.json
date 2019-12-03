@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-pencil-draw",
-  "version": "3.0.24",
+  "version": "3.0.29",
   "main": "lib/filter-pencil-draw.cjs.js",
   "keywords": [
     "pixi",

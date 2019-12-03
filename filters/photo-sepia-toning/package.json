@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-photo-sepia-toning",
-  "version": "3.0.24",
+  "version": "3.0.29",
   "main": "lib/filter-photo-sepia-toning.cjs.js",
   "keywords": [
     "pixi",
