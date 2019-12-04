@@ -1,6 +1,6 @@
 {
   "name": "@amoy/filter-colorblind",
-  "version": "3.0.29",
+  "version": "3.0.31",
   "main": "lib/filter-colorblind.cjs.js",
   "keywords": [
     "pixi",

@@ -1,7 +1,7 @@
 {
   "name": "@tools/demo",
   "private": true,
-  "version": "3.0.30",
+  "version": "3.0.31",
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf index.js.map index.js",
