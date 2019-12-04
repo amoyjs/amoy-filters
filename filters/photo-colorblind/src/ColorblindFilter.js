@@ -55,8 +55,7 @@ class AmoyColorblindFilter extends Filter {
 
     set blindType(value){
         this._blindType = value;
-        switch(this._blindType)
-        {
+        switch(this._blindType) {
             case AMOY_CLORBLINDE_TYPE_ENUM.Protanopia:{
                 this.uniforms.m = Protanopia;
                 break;
@@ -89,7 +88,7 @@ class AmoyColorblindFilter extends Filter {
                 this.uniforms.m = Achromatomaly;
                 break;
             }
-        }        
+        }
     }
 
     get blindType(){
