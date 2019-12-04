@@ -5,7 +5,7 @@ export default function() {
         global: false,
         opened: false,
         oncreate(folder) {
-    
+            folder.add(this, 'blindType', 1, 8, 1);
         }
     });
 }
