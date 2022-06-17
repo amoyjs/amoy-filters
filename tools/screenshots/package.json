@@ -9,7 +9,7 @@
   "devDependencies": {
     "@amoy/filters": "^3.0.31",
     "base64-to-image": "^1.0.2",
-    "electron": "^4.0.1",
+    "electron": "^15.5.5",
     "fs-extra": "^7.0.1",
     "gifencoder": "^2.0.1",
     "pixi.js": "^5.0.0-X"
